@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ioopassignment
 {
-    public partial class manageuserForm : Form
+    public partial class addusermanagerForm : Form
     {
-        public manageuserForm()
+        public addusermanagerForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpUserDetails_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

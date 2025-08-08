@@ -32,6 +32,7 @@
             btnDelete = new Button();
             btnSave = new Button();
             btnExit = new Button();
+            grpUserDetails = new GroupBox();
             SuspendLayout();
             // 
             // btnAddUser
@@ -71,11 +72,24 @@
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
             // 
+            // grpUserDetails
+            // 
+            grpUserDetails.BackColor = Color.White;
+            grpUserDetails.Location = new Point(96, 58);
+            grpUserDetails.Name = "grpUserDetails";
+            grpUserDetails.Size = new Size(590, 285);
+            grpUserDetails.TabIndex = 4;
+            grpUserDetails.TabStop = false;
+            grpUserDetails.Text = "User Details";
+            grpUserDetails.Enter += grpUserDetails_Enter;
+            // 
             // manageuserForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(800, 450);
+            Controls.Add(grpUserDetails);
             Controls.Add(btnExit);
             Controls.Add(btnSave);
             Controls.Add(btnDelete);
@@ -91,5 +105,6 @@
         private Button btnDelete;
         private Button btnSave;
         private Button btnExit;
+        private GroupBox grpUserDetails;
     }
 }
