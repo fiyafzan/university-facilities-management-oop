@@ -32,6 +32,10 @@
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
+            txtAddFacilityCapacity = new TextBox();
+            label6 = new Label();
+            txtAddFacilityLocation = new TextBox();
+            label5 = new Label();
             label1 = new Label();
             label2 = new Label();
             txtAddFacilityRate = new TextBox();
@@ -40,10 +44,6 @@
             txtAddUniversity = new TextBox();
             btnExitAddFacility = new Button();
             btnConfirmAddFacility = new Button();
-            label5 = new Label();
-            txtAddFacilityLocation = new TextBox();
-            label6 = new Label();
-            txtAddFacilityCapacity = new TextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
@@ -92,6 +92,43 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(381, 231);
             panel2.TabIndex = 17;
+            // 
+            // txtAddFacilityCapacity
+            // 
+            txtAddFacilityCapacity.Font = new Font("Roboto", 9F);
+            txtAddFacilityCapacity.Location = new Point(239, 195);
+            txtAddFacilityCapacity.Name = "txtAddFacilityCapacity";
+            txtAddFacilityCapacity.Size = new Size(125, 26);
+            txtAddFacilityCapacity.TabIndex = 15;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(103, 187);
+            label6.Name = "label6";
+            label6.Size = new Size(130, 31);
+            label6.TabIndex = 14;
+            label6.Text = "Capacity :";
+            // 
+            // txtAddFacilityLocation
+            // 
+            txtAddFacilityLocation.Font = new Font("Roboto", 9F);
+            txtAddFacilityLocation.Location = new Point(239, 152);
+            txtAddFacilityLocation.Name = "txtAddFacilityLocation";
+            txtAddFacilityLocation.Size = new Size(125, 26);
+            txtAddFacilityLocation.TabIndex = 13;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Location = new Point(111, 147);
+            label5.Name = "label5";
+            label5.Size = new Size(122, 31);
+            label5.TabIndex = 12;
+            label5.Text = "Location :";
+            label5.Click += label5_Click;
             // 
             // label1
             // 
@@ -170,43 +207,6 @@
             btnConfirmAddFacility.TabIndex = 15;
             btnConfirmAddFacility.Text = "Confirm Add";
             btnConfirmAddFacility.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(111, 147);
-            label5.Name = "label5";
-            label5.Size = new Size(122, 31);
-            label5.TabIndex = 12;
-            label5.Text = "Location :";
-            label5.Click += label5_Click;
-            // 
-            // txtAddFacilityLocation
-            // 
-            txtAddFacilityLocation.Font = new Font("Roboto", 9F);
-            txtAddFacilityLocation.Location = new Point(239, 152);
-            txtAddFacilityLocation.Name = "txtAddFacilityLocation";
-            txtAddFacilityLocation.Size = new Size(125, 26);
-            txtAddFacilityLocation.TabIndex = 13;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.Location = new Point(103, 187);
-            label6.Name = "label6";
-            label6.Size = new Size(130, 31);
-            label6.TabIndex = 14;
-            label6.Text = "Capacity :";
-            // 
-            // txtAddFacilityCapacity
-            // 
-            txtAddFacilityCapacity.Font = new Font("Roboto", 9F);
-            txtAddFacilityCapacity.Location = new Point(239, 195);
-            txtAddFacilityCapacity.Name = "txtAddFacilityCapacity";
-            txtAddFacilityCapacity.Size = new Size(125, 26);
-            txtAddFacilityCapacity.TabIndex = 15;
             // 
             // pictureBox1
             // 

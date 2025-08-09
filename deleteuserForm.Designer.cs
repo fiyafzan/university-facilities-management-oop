@@ -30,9 +30,9 @@
         {
             panel1 = new Panel();
             label1 = new Label();
-            grpUserDetails = new GroupBox();
             btnExitDeleteUser = new Button();
-            btnConfirmDelete = new Button();
+            btnConfirmDeleteUser = new Button();
+            grpUserDetails2 = new GroupBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,16 +58,6 @@
             label1.Text = "ARFMS Delete User Form";
             label1.Click += label1_Click;
             // 
-            // grpUserDetails
-            // 
-            grpUserDetails.BackColor = Color.White;
-            grpUserDetails.Location = new Point(90, 70);
-            grpUserDetails.Name = "grpUserDetails";
-            grpUserDetails.Size = new Size(590, 285);
-            grpUserDetails.TabIndex = 14;
-            grpUserDetails.TabStop = false;
-            grpUserDetails.Text = "User Details";
-            // 
             // btnExitDeleteUser
             // 
             btnExitDeleteUser.BackColor = Color.FromArgb(255, 224, 192);
@@ -79,16 +69,26 @@
             btnExitDeleteUser.Text = "Exit";
             btnExitDeleteUser.UseVisualStyleBackColor = false;
             // 
-            // btnConfirmDelete
+            // btnConfirmDeleteUser
             // 
-            btnConfirmDelete.BackColor = Color.FromArgb(255, 224, 192);
-            btnConfirmDelete.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmDelete.Location = new Point(220, 361);
-            btnConfirmDelete.Name = "btnConfirmDelete";
-            btnConfirmDelete.Size = new Size(153, 41);
-            btnConfirmDelete.TabIndex = 15;
-            btnConfirmDelete.Text = "Confirm Delete";
-            btnConfirmDelete.UseVisualStyleBackColor = false;
+            btnConfirmDeleteUser.BackColor = Color.FromArgb(255, 224, 192);
+            btnConfirmDeleteUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
+            btnConfirmDeleteUser.Location = new Point(220, 361);
+            btnConfirmDeleteUser.Name = "btnConfirmDeleteUser";
+            btnConfirmDeleteUser.Size = new Size(153, 41);
+            btnConfirmDeleteUser.TabIndex = 15;
+            btnConfirmDeleteUser.Text = "Confirm Delete";
+            btnConfirmDeleteUser.UseVisualStyleBackColor = false;
+            // 
+            // grpUserDetails2
+            // 
+            grpUserDetails2.BackColor = Color.White;
+            grpUserDetails2.Location = new Point(90, 70);
+            grpUserDetails2.Name = "grpUserDetails2";
+            grpUserDetails2.Size = new Size(590, 285);
+            grpUserDetails2.TabIndex = 14;
+            grpUserDetails2.TabStop = false;
+            grpUserDetails2.Text = "User Details";
             // 
             // deleteuserForm
             // 
@@ -96,8 +96,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(771, 425);
             Controls.Add(btnExitDeleteUser);
-            Controls.Add(btnConfirmDelete);
-            Controls.Add(grpUserDetails);
+            Controls.Add(btnConfirmDeleteUser);
+            Controls.Add(grpUserDetails2);
             Controls.Add(panel1);
             Name = "deleteuserForm";
             Text = "deleteuserForm";
@@ -110,8 +110,8 @@
 
         private Panel panel1;
         private Label label1;
-        private GroupBox grpUserDetails;
         private Button btnExitDeleteUser;
-        private Button btnConfirmDelete;
+        private Button btnConfirmDeleteUser;
+        private GroupBox grpUserDetails2;
     }
 }
