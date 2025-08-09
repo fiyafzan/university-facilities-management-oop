@@ -67,7 +67,7 @@
             // btnHandleRequest
             // 
             btnHandleRequest.BackColor = Color.FromArgb(255, 224, 192);
-            btnHandleRequest.Font = new Font("Roboto", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnHandleRequest.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
             btnHandleRequest.Location = new Point(261, 380);
             btnHandleRequest.Name = "btnHandleRequest";
             btnHandleRequest.Size = new Size(253, 36);
@@ -78,7 +78,7 @@
             // btnAssignMaintanance
             // 
             btnAssignMaintanance.BackColor = Color.FromArgb(255, 224, 192);
-            btnAssignMaintanance.Font = new Font("Roboto", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnAssignMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
             btnAssignMaintanance.Location = new Point(261, 317);
             btnAssignMaintanance.Name = "btnAssignMaintanance";
             btnAssignMaintanance.Size = new Size(253, 36);
@@ -89,7 +89,7 @@
             // btnManageFacilities
             // 
             btnManageFacilities.BackColor = Color.FromArgb(255, 224, 192);
-            btnManageFacilities.Font = new Font("Roboto", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnManageFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
             btnManageFacilities.Location = new Point(261, 256);
             btnManageFacilities.Name = "btnManageFacilities";
             btnManageFacilities.Size = new Size(253, 36);
@@ -121,7 +121,7 @@
             // btnManageUser
             // 
             btnManageUser.BackColor = Color.FromArgb(255, 224, 192);
-            btnManageUser.Font = new Font("Roboto", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnManageUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
             btnManageUser.Location = new Point(261, 196);
             btnManageUser.Name = "btnManageUser";
             btnManageUser.Size = new Size(253, 36);

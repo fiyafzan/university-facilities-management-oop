@@ -24,6 +24,16 @@ namespace ioopassignment
 
         private void grpUserDetails_Enter(object sender, EventArgs e)
         {
+            grpUserDetails.Visible = false;
+        }
+
+        private void btnSeeUser_Click(object sender, EventArgs e)
+        {
+            grpUserDetails.Visible = true;
+        }
+
+        private void manageuserForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
