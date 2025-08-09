@@ -68,7 +68,7 @@
             // 
             btnHandleRequest.BackColor = Color.FromArgb(255, 224, 192);
             btnHandleRequest.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnHandleRequest.Location = new Point(261, 380);
+            btnHandleRequest.Location = new Point(255, 369);
             btnHandleRequest.Name = "btnHandleRequest";
             btnHandleRequest.Size = new Size(253, 36);
             btnHandleRequest.TabIndex = 14;
@@ -79,7 +79,7 @@
             // 
             btnAssignMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnAssignMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnAssignMaintanance.Location = new Point(261, 317);
+            btnAssignMaintanance.Location = new Point(255, 306);
             btnAssignMaintanance.Name = "btnAssignMaintanance";
             btnAssignMaintanance.Size = new Size(253, 36);
             btnAssignMaintanance.TabIndex = 13;
@@ -90,7 +90,7 @@
             // 
             btnManageFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnManageFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnManageFacilities.Location = new Point(261, 256);
+            btnManageFacilities.Location = new Point(255, 245);
             btnManageFacilities.Name = "btnManageFacilities";
             btnManageFacilities.Size = new Size(253, 36);
             btnManageFacilities.TabIndex = 12;
@@ -122,7 +122,7 @@
             // 
             btnManageUser.BackColor = Color.FromArgb(255, 224, 192);
             btnManageUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnManageUser.Location = new Point(261, 196);
+            btnManageUser.Location = new Point(255, 185);
             btnManageUser.Name = "btnManageUser";
             btnManageUser.Size = new Size(253, 36);
             btnManageUser.TabIndex = 10;
