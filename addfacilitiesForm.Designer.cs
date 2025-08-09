@@ -34,8 +34,6 @@
             panel2 = new Panel();
             txtAddFacilityCapacity = new TextBox();
             label6 = new Label();
-            txtAddFacilityLocation = new TextBox();
-            label5 = new Label();
             label1 = new Label();
             label2 = new Label();
             txtAddFacilityRate = new TextBox();
@@ -79,8 +77,6 @@
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(txtAddFacilityCapacity);
             panel2.Controls.Add(label6);
-            panel2.Controls.Add(txtAddFacilityLocation);
-            panel2.Controls.Add(label5);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(txtAddFacilityRate);
@@ -88,15 +84,15 @@
             panel2.Controls.Add(txtAddFacilityType);
             panel2.Controls.Add(txtAddUniversity);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(211, 92);
+            panel2.Location = new Point(201, 115);
             panel2.Name = "panel2";
-            panel2.Size = new Size(381, 231);
+            panel2.Size = new Size(386, 208);
             panel2.TabIndex = 17;
             // 
             // txtAddFacilityCapacity
             // 
             txtAddFacilityCapacity.Font = new Font("Roboto", 9F);
-            txtAddFacilityCapacity.Location = new Point(239, 195);
+            txtAddFacilityCapacity.Location = new Point(242, 161);
             txtAddFacilityCapacity.Name = "txtAddFacilityCapacity";
             txtAddFacilityCapacity.Size = new Size(125, 26);
             txtAddFacilityCapacity.TabIndex = 15;
@@ -105,36 +101,17 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.Location = new Point(103, 187);
+            label6.Location = new Point(106, 156);
             label6.Name = "label6";
             label6.Size = new Size(130, 31);
             label6.TabIndex = 14;
             label6.Text = "Capacity :";
             // 
-            // txtAddFacilityLocation
-            // 
-            txtAddFacilityLocation.Font = new Font("Roboto", 9F);
-            txtAddFacilityLocation.Location = new Point(239, 152);
-            txtAddFacilityLocation.Name = "txtAddFacilityLocation";
-            txtAddFacilityLocation.Size = new Size(125, 26);
-            txtAddFacilityLocation.TabIndex = 13;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(111, 147);
-            label5.Name = "label5";
-            label5.Size = new Size(122, 31);
-            label5.TabIndex = 12;
-            label5.Text = "Location :";
-            label5.Click += label5_Click;
-            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(18, 10);
+            label1.Location = new Point(21, 19);
             label1.Name = "label1";
             label1.Size = new Size(215, 31);
             label1.TabIndex = 6;
@@ -145,7 +122,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(59, 51);
+            label2.Location = new Point(62, 60);
             label2.Name = "label2";
             label2.Size = new Size(174, 31);
             label2.TabIndex = 7;
@@ -154,7 +131,7 @@
             // txtAddFacilityRate
             // 
             txtAddFacilityRate.Font = new Font("Roboto", 9F);
-            txtAddFacilityRate.Location = new Point(239, 106);
+            txtAddFacilityRate.Location = new Point(242, 115);
             txtAddFacilityRate.Name = "txtAddFacilityRate";
             txtAddFacilityRate.Size = new Size(125, 26);
             txtAddFacilityRate.TabIndex = 11;
@@ -163,7 +140,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(0, 101);
+            label3.Location = new Point(3, 110);
             label3.Name = "label3";
             label3.Size = new Size(233, 31);
             label3.TabIndex = 8;
@@ -172,7 +149,7 @@
             // txtAddFacilityType
             // 
             txtAddFacilityType.Font = new Font("Roboto", 9F);
-            txtAddFacilityType.Location = new Point(239, 56);
+            txtAddFacilityType.Location = new Point(242, 65);
             txtAddFacilityType.Name = "txtAddFacilityType";
             txtAddFacilityType.Size = new Size(125, 26);
             txtAddFacilityType.TabIndex = 10;
@@ -180,7 +157,7 @@
             // txtAddUniversity
             // 
             txtAddUniversity.Font = new Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAddUniversity.Location = new Point(239, 10);
+            txtAddUniversity.Location = new Point(242, 19);
             txtAddUniversity.Name = "txtAddUniversity";
             txtAddUniversity.Size = new Size(125, 26);
             txtAddUniversity.TabIndex = 9;
@@ -189,7 +166,7 @@
             // 
             btnExitAddFacility.BackColor = Color.FromArgb(255, 224, 192);
             btnExitAddFacility.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAddFacility.Location = new Point(409, 350);
+            btnExitAddFacility.Location = new Point(401, 341);
             btnExitAddFacility.Name = "btnExitAddFacility";
             btnExitAddFacility.Size = new Size(153, 41);
             btnExitAddFacility.TabIndex = 16;
@@ -201,7 +178,7 @@
             // 
             btnConfirmAddFacility.BackColor = Color.FromArgb(255, 224, 192);
             btnConfirmAddFacility.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmAddFacility.Location = new Point(241, 350);
+            btnConfirmAddFacility.Location = new Point(233, 341);
             btnConfirmAddFacility.Name = "btnConfirmAddFacility";
             btnConfirmAddFacility.Size = new Size(153, 41);
             btnConfirmAddFacility.TabIndex = 15;
@@ -214,7 +191,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 135);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(183, 159);
+            pictureBox1.Size = new Size(173, 169);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
@@ -265,10 +242,8 @@
         private TextBox txtAddUniversity;
         private Button btnExitAddFacility;
         private Button btnConfirmAddFacility;
-        private Label label5;
         private TextBox txtAddFacilityCapacity;
         private Label label6;
-        private TextBox txtAddFacilityLocation;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
     }
