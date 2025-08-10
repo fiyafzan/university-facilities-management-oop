@@ -60,6 +60,7 @@
             btnDeleteUser.TabIndex = 1;
             btnDeleteUser.Text = "Delete";
             btnDeleteUser.UseVisualStyleBackColor = false;
+            btnDeleteUser.Click += btnDeleteUser_Click;
             // 
             // btnExitManageUser
             // 
@@ -71,6 +72,7 @@
             btnExitManageUser.TabIndex = 3;
             btnExitManageUser.Text = "Exit";
             btnExitManageUser.UseVisualStyleBackColor = false;
+            btnExitManageUser.Click += btnExitManageUser_Click;
             // 
             // grpUserDetails
             // 

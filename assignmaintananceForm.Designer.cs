@@ -89,6 +89,7 @@
             btnExitAssignMaintanace.TabIndex = 20;
             btnExitAssignMaintanace.Text = "Exit";
             btnExitAssignMaintanace.UseVisualStyleBackColor = false;
+            btnExitAssignMaintanace.Click += btnExitAssignMaintanace_Click;
             // 
             // btnAssignMaintanance
             // 
@@ -100,6 +101,7 @@
             btnAssignMaintanance.TabIndex = 19;
             btnAssignMaintanance.Text = "Assign Maintanance";
             btnAssignMaintanance.UseVisualStyleBackColor = false;
+            btnAssignMaintanance.Click += btnAssignMaintanance_Click;
             // 
             // assignmaintananceForm
             // 

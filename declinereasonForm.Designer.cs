@@ -61,6 +61,7 @@
             btnExitDeclineReason.TabIndex = 30;
             btnExitDeclineReason.Text = "Exit";
             btnExitDeclineReason.UseVisualStyleBackColor = false;
+            btnExitDeclineReason.Click += btnExitDeclineReason_Click;
             // 
             // btnContinueDecline
             // 

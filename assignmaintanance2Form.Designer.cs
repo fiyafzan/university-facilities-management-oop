@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
-            label6 = new Label();
+            txtDateAssignMaintanance = new TextBox();
+            comboAssignTechnician = new ComboBox();
             label5 = new Label();
+            comboAssignDuration = new ComboBox();
+            comboAssignFacilityType = new ComboBox();
+            comboAssignUniversity = new ComboBox();
+            label6 = new Label();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             panel1 = new Panel();
             label4 = new Label();
-            comboAssignUniversity = new ComboBox();
-            comboAssignFacilityType = new ComboBox();
-            comboAssignDuration = new ComboBox();
-            comboAssignTechnician = new ComboBox();
-            txtDateAssignMaintanance = new TextBox();
             btnExitAddMaintanance = new Button();
             btnConfirmAddMaintanance = new Button();
             pictureBox2 = new PictureBox();
@@ -72,15 +72,20 @@
             panel2.Size = new Size(402, 231);
             panel2.TabIndex = 20;
             // 
-            // label6
+            // txtDateAssignMaintanance
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.Location = new Point(154, 144);
-            label6.Name = "label6";
-            label6.Size = new Size(79, 31);
-            label6.TabIndex = 14;
-            label6.Text = "Date :";
+            txtDateAssignMaintanance.Location = new Point(239, 148);
+            txtDateAssignMaintanance.Name = "txtDateAssignMaintanance";
+            txtDateAssignMaintanance.Size = new Size(151, 27);
+            txtDateAssignMaintanance.TabIndex = 20;
+            // 
+            // comboAssignTechnician
+            // 
+            comboAssignTechnician.FormattingEnabled = true;
+            comboAssignTechnician.Location = new Point(239, 193);
+            comboAssignTechnician.Name = "comboAssignTechnician";
+            comboAssignTechnician.Size = new Size(151, 28);
+            comboAssignTechnician.TabIndex = 19;
             // 
             // label5
             // 
@@ -91,6 +96,40 @@
             label5.Size = new Size(147, 31);
             label5.TabIndex = 12;
             label5.Text = "Technician :";
+            // 
+            // comboAssignDuration
+            // 
+            comboAssignDuration.FormattingEnabled = true;
+            comboAssignDuration.Location = new Point(239, 104);
+            comboAssignDuration.Name = "comboAssignDuration";
+            comboAssignDuration.Size = new Size(151, 28);
+            comboAssignDuration.TabIndex = 17;
+            // 
+            // comboAssignFacilityType
+            // 
+            comboAssignFacilityType.FormattingEnabled = true;
+            comboAssignFacilityType.Location = new Point(239, 59);
+            comboAssignFacilityType.Name = "comboAssignFacilityType";
+            comboAssignFacilityType.Size = new Size(151, 28);
+            comboAssignFacilityType.TabIndex = 16;
+            // 
+            // comboAssignUniversity
+            // 
+            comboAssignUniversity.FormattingEnabled = true;
+            comboAssignUniversity.Location = new Point(239, 10);
+            comboAssignUniversity.Name = "comboAssignUniversity";
+            comboAssignUniversity.Size = new Size(151, 28);
+            comboAssignUniversity.TabIndex = 15;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label6.Location = new Point(154, 144);
+            label6.Name = "label6";
+            label6.Size = new Size(79, 31);
+            label6.TabIndex = 14;
+            label6.Text = "Date :";
             // 
             // label1
             // 
@@ -145,45 +184,6 @@
             label4.Text = "ARFMS Add Assign Maintanance Form";
             label4.Click += label4_Click;
             // 
-            // comboAssignUniversity
-            // 
-            comboAssignUniversity.FormattingEnabled = true;
-            comboAssignUniversity.Location = new Point(239, 10);
-            comboAssignUniversity.Name = "comboAssignUniversity";
-            comboAssignUniversity.Size = new Size(151, 28);
-            comboAssignUniversity.TabIndex = 15;
-            // 
-            // comboAssignFacilityType
-            // 
-            comboAssignFacilityType.FormattingEnabled = true;
-            comboAssignFacilityType.Location = new Point(239, 59);
-            comboAssignFacilityType.Name = "comboAssignFacilityType";
-            comboAssignFacilityType.Size = new Size(151, 28);
-            comboAssignFacilityType.TabIndex = 16;
-            // 
-            // comboAssignDuration
-            // 
-            comboAssignDuration.FormattingEnabled = true;
-            comboAssignDuration.Location = new Point(239, 104);
-            comboAssignDuration.Name = "comboAssignDuration";
-            comboAssignDuration.Size = new Size(151, 28);
-            comboAssignDuration.TabIndex = 17;
-            // 
-            // comboAssignTechnician
-            // 
-            comboAssignTechnician.FormattingEnabled = true;
-            comboAssignTechnician.Location = new Point(239, 193);
-            comboAssignTechnician.Name = "comboAssignTechnician";
-            comboAssignTechnician.Size = new Size(151, 28);
-            comboAssignTechnician.TabIndex = 19;
-            // 
-            // txtDateAssignMaintanance
-            // 
-            txtDateAssignMaintanance.Location = new Point(239, 148);
-            txtDateAssignMaintanance.Name = "txtDateAssignMaintanance";
-            txtDateAssignMaintanance.Size = new Size(151, 27);
-            txtDateAssignMaintanance.TabIndex = 20;
-            // 
             // btnExitAddMaintanance
             // 
             btnExitAddMaintanance.BackColor = Color.FromArgb(255, 224, 192);
@@ -194,6 +194,7 @@
             btnExitAddMaintanance.TabIndex = 22;
             btnExitAddMaintanance.Text = "Exit";
             btnExitAddMaintanance.UseVisualStyleBackColor = false;
+            btnExitAddMaintanance.Click += btnExitAddMaintanance_Click;
             // 
             // btnConfirmAddMaintanance
             // 

@@ -77,6 +77,7 @@
             btnExitDeleteFacilities.TabIndex = 18;
             btnExitDeleteFacilities.Text = "Exit";
             btnExitDeleteFacilities.UseVisualStyleBackColor = false;
+            btnExitDeleteFacilities.Click += btnExitDeleteFacilities_Click;
             // 
             // btnConfirmDeleteFacilities
             // 

@@ -29,7 +29,9 @@ namespace ioopassignment
 
         private void btnExitAddFacility_Click(object sender, EventArgs e)
         {
-
+            managefacilitiesForm f1 = new managefacilitiesForm();
+            f1.Show();
+            this.Hide();
         }
     }
 }

@@ -16,5 +16,12 @@ namespace ioopassignment
         {
             InitializeComponent();
         }
+
+        private void btnExitDeclineReason_Click(object sender, EventArgs e)
+        {
+            handlemaintanancerequestForm f1 = new handlemaintanancerequestForm();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

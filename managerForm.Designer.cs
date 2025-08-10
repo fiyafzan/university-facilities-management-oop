@@ -74,6 +74,7 @@
             btnHandleRequest.TabIndex = 14;
             btnHandleRequest.Text = "Handle Maintanance Request";
             btnHandleRequest.UseVisualStyleBackColor = false;
+            btnHandleRequest.Click += btnHandleRequest_Click;
             // 
             // btnAssignMaintanance
             // 
@@ -85,6 +86,7 @@
             btnAssignMaintanance.TabIndex = 13;
             btnAssignMaintanance.Text = "Assign Maintanance";
             btnAssignMaintanance.UseVisualStyleBackColor = false;
+            btnAssignMaintanance.Click += btnAssignMaintanance_Click;
             // 
             // btnManageFacilities
             // 
@@ -96,6 +98,7 @@
             btnManageFacilities.TabIndex = 12;
             btnManageFacilities.Text = "Manage facilities";
             btnManageFacilities.UseVisualStyleBackColor = false;
+            btnManageFacilities.Click += btnManageFacilities_Click;
             // 
             // panel1
             // 

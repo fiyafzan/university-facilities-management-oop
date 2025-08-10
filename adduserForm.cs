@@ -21,5 +21,12 @@ namespace ioopassignment
         {
 
         }
+
+        private void btnExitAddUser_Click(object sender, EventArgs e)
+        {
+            manageuserForm f1 = new manageuserForm();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

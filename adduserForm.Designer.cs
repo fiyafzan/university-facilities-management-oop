@@ -58,6 +58,7 @@
             btnExitAddUser.TabIndex = 5;
             btnExitAddUser.Text = "Exit";
             btnExitAddUser.UseVisualStyleBackColor = false;
+            btnExitAddUser.Click += btnExitAddUser_Click;
             // 
             // btnConfirmAddUser
             // 

@@ -68,6 +68,7 @@
             btnExitDeleteUser.TabIndex = 16;
             btnExitDeleteUser.Text = "Exit";
             btnExitDeleteUser.UseVisualStyleBackColor = false;
+            btnExitDeleteUser.Click += btnExitDeleteUser_Click;
             // 
             // btnConfirmDeleteUser
             // 

@@ -79,17 +79,19 @@
             btnExitHandleRequest.TabIndex = 28;
             btnExitHandleRequest.Text = "Exit";
             btnExitHandleRequest.UseVisualStyleBackColor = false;
+            btnExitHandleRequest.Click += btnExitHandleRequest_Click;
             // 
             // btnDeclineRequest
             // 
             btnDeclineRequest.BackColor = Color.FromArgb(255, 224, 192);
             btnDeclineRequest.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnDeclineRequest.Location = new Point(302, 376);
+            btnDeclineRequest.Location = new Point(299, 376);
             btnDeclineRequest.Name = "btnDeclineRequest";
             btnDeclineRequest.Size = new Size(153, 41);
             btnDeclineRequest.TabIndex = 27;
             btnDeclineRequest.Text = "Decline";
             btnDeclineRequest.UseVisualStyleBackColor = false;
+            btnDeclineRequest.Click += btnDeclineRequest_Click;
             // 
             // btnApproveRequest
             // 

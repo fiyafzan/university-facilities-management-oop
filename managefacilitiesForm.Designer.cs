@@ -106,6 +106,7 @@
             btnDeleteFacilities.TabIndex = 17;
             btnDeleteFacilities.Text = "Delete";
             btnDeleteFacilities.UseVisualStyleBackColor = false;
+            btnDeleteFacilities.Click += btnDeleteFacilities_Click;
             // 
             // btnAddFacilities
             // 
@@ -117,6 +118,7 @@
             btnAddFacilities.TabIndex = 16;
             btnAddFacilities.Text = "Add";
             btnAddFacilities.UseVisualStyleBackColor = false;
+            btnAddFacilities.Click += btnAddFacilities_Click;
             // 
             // btnEditFacilities
             // 
@@ -128,6 +130,7 @@
             btnEditFacilities.TabIndex = 19;
             btnEditFacilities.Text = "Edit";
             btnEditFacilities.UseVisualStyleBackColor = false;
+            btnEditFacilities.Click += btnEditFacilities_Click;
             // 
             // managefacilitiesForm
             // 

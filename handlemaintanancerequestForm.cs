@@ -21,5 +21,19 @@ namespace ioopassignment
         {
 
         }
+
+        private void btnDeclineRequest_Click(object sender, EventArgs e)
+        {
+            declinereasonForm f2 = new declinereasonForm();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void btnExitHandleRequest_Click(object sender, EventArgs e)
+        {
+            managerForm f1 = new managerForm();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

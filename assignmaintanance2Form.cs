@@ -31,5 +31,12 @@ namespace ioopassignment
         {
 
         }
+
+        private void btnExitAddMaintanance_Click(object sender, EventArgs e)
+        {
+            assignmaintananceForm f1 = new assignmaintananceForm();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
