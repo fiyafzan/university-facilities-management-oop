@@ -28,5 +28,16 @@ namespace ioopassignment
             f1.Show();
             this.Hide();
         }
+
+        private void btnConfirmAddUser_Click(object sender, EventArgs e)
+        {
+            User adduser = new User( txtAddUsername.Text, txtAddPassword.Text, txtAddRole.Text );
+            MessageBox.Show(adduser.addUser());
+            txtAddUsername.Text = String.Empty;
+            txtAddPassword.Text = String.Empty;
+            txtAddRole.Text = String.Empty;
+
+            this.Close();
+        }
     }
 }

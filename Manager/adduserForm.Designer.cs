@@ -36,7 +36,7 @@
             label3 = new Label();
             txtAddUsername = new TextBox();
             txtAddPassword = new TextBox();
-            textBox1 = new TextBox();
+            txtAddRole = new TextBox();
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
@@ -70,6 +70,7 @@
             btnConfirmAddUser.TabIndex = 4;
             btnConfirmAddUser.Text = "Confirm Add";
             btnConfirmAddUser.UseVisualStyleBackColor = false;
+            btnConfirmAddUser.Click += btnConfirmAddUser_Click;
             // 
             // label1
             // 
@@ -118,13 +119,13 @@
             txtAddPassword.TabIndex = 10;
             txtAddPassword.TextChanged += txtAddPassword_TextChanged;
             // 
-            // textBox1
+            // txtAddRole
             // 
-            textBox1.Font = new Font("Roboto", 9F);
-            textBox1.Location = new Point(190, 160);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 26);
-            textBox1.TabIndex = 11;
+            txtAddRole.Font = new Font("Roboto", 9F);
+            txtAddRole.Location = new Point(190, 160);
+            txtAddRole.Name = "txtAddRole";
+            txtAddRole.Size = new Size(125, 26);
+            txtAddRole.TabIndex = 11;
             // 
             // panel1
             // 
@@ -153,7 +154,7 @@
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtAddRole);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(txtAddPassword);
             panel2.Controls.Add(txtAddUsername);
@@ -216,7 +217,7 @@
         private Label label3;
         private TextBox txtAddUsername;
         private TextBox txtAddPassword;
-        private TextBox textBox1;
+        private TextBox txtAddRole;
         private Panel panel1;
         private Label label4;
         private Panel panel2;
