@@ -32,11 +32,14 @@
             label1 = new Label();
             btnSeeFacilities = new Button();
             grpFacilitiesDetails = new GroupBox();
+            dataFacilityDetails = new DataGridView();
             btnExitManageFacilities = new Button();
             btnDeleteFacilities = new Button();
             btnAddFacilities = new Button();
             btnEditFacilities = new Button();
             panel1.SuspendLayout();
+            grpFacilitiesDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataFacilityDetails).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -76,6 +79,7 @@
             // grpFacilitiesDetails
             // 
             grpFacilitiesDetails.BackColor = Color.White;
+            grpFacilitiesDetails.Controls.Add(dataFacilityDetails);
             grpFacilitiesDetails.Location = new Point(105, 83);
             grpFacilitiesDetails.Name = "grpFacilitiesDetails";
             grpFacilitiesDetails.Size = new Size(590, 285);
@@ -83,6 +87,16 @@
             grpFacilitiesDetails.TabStop = false;
             grpFacilitiesDetails.Text = "Facilities Details";
             grpFacilitiesDetails.Enter += grpFacilitiesDetails_Enter;
+            // 
+            // dataFacilityDetails
+            // 
+            dataFacilityDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataFacilityDetails.Location = new Point(17, 26);
+            dataFacilityDetails.Name = "dataFacilityDetails";
+            dataFacilityDetails.RowHeadersWidth = 51;
+            dataFacilityDetails.Size = new Size(556, 241);
+            dataFacilityDetails.TabIndex = 0;
+            dataFacilityDetails.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnExitManageFacilities
             // 
@@ -146,8 +160,11 @@
             Controls.Add(panel1);
             Name = "managefacilitiesForm";
             Text = "managefacilitiesForm";
+            Load += managefacilitiesForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            grpFacilitiesDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataFacilityDetails).EndInit();
             ResumeLayout(false);
         }
 
@@ -161,5 +178,6 @@
         private Button btnDeleteFacilities;
         private Button btnAddFacilities;
         private Button btnEditFacilities;
+        private DataGridView dataFacilityDetails;
     }
 }

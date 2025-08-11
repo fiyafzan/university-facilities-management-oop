@@ -31,11 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
             txtDateAssignMaintanance = new TextBox();
-            comboAssignTechnician = new ComboBox();
             label5 = new Label();
-            comboAssignDuration = new ComboBox();
-            comboAssignFacilityType = new ComboBox();
-            comboAssignUniversity = new ComboBox();
             label6 = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -46,6 +42,10 @@
             btnConfirmAddMaintanance = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -56,12 +56,12 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(textBox1);
             panel2.Controls.Add(txtDateAssignMaintanance);
-            panel2.Controls.Add(comboAssignTechnician);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(comboAssignDuration);
-            panel2.Controls.Add(comboAssignFacilityType);
-            panel2.Controls.Add(comboAssignUniversity);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
@@ -79,14 +79,6 @@
             txtDateAssignMaintanance.Size = new Size(151, 27);
             txtDateAssignMaintanance.TabIndex = 20;
             // 
-            // comboAssignTechnician
-            // 
-            comboAssignTechnician.FormattingEnabled = true;
-            comboAssignTechnician.Location = new Point(239, 193);
-            comboAssignTechnician.Name = "comboAssignTechnician";
-            comboAssignTechnician.Size = new Size(151, 28);
-            comboAssignTechnician.TabIndex = 19;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -96,30 +88,6 @@
             label5.Size = new Size(147, 31);
             label5.TabIndex = 12;
             label5.Text = "Technician :";
-            // 
-            // comboAssignDuration
-            // 
-            comboAssignDuration.FormattingEnabled = true;
-            comboAssignDuration.Location = new Point(239, 104);
-            comboAssignDuration.Name = "comboAssignDuration";
-            comboAssignDuration.Size = new Size(151, 28);
-            comboAssignDuration.TabIndex = 17;
-            // 
-            // comboAssignFacilityType
-            // 
-            comboAssignFacilityType.FormattingEnabled = true;
-            comboAssignFacilityType.Location = new Point(239, 59);
-            comboAssignFacilityType.Name = "comboAssignFacilityType";
-            comboAssignFacilityType.Size = new Size(151, 28);
-            comboAssignFacilityType.TabIndex = 16;
-            // 
-            // comboAssignUniversity
-            // 
-            comboAssignUniversity.FormattingEnabled = true;
-            comboAssignUniversity.Location = new Point(239, 10);
-            comboAssignUniversity.Name = "comboAssignUniversity";
-            comboAssignUniversity.Size = new Size(151, 28);
-            comboAssignUniversity.TabIndex = 15;
             // 
             // label6
             // 
@@ -230,6 +198,34 @@
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(239, 194);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(151, 27);
+            textBox1.TabIndex = 21;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(239, 107);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(151, 27);
+            textBox2.TabIndex = 22;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(239, 62);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(151, 27);
+            textBox3.TabIndex = 23;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(239, 16);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(151, 27);
+            textBox4.TabIndex = 24;
+            // 
             // assignmaintanance2Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -261,14 +257,14 @@
         private Label label3;
         private Panel panel1;
         private Label label4;
-        private ComboBox comboAssignTechnician;
-        private ComboBox comboAssignDuration;
-        private ComboBox comboAssignFacilityType;
-        private ComboBox comboAssignUniversity;
         private TextBox txtDateAssignMaintanance;
         private Button btnExitAddMaintanance;
         private Button btnConfirmAddMaintanance;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
     }
 }

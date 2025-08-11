@@ -34,7 +34,10 @@
             btnSeeAssignMaintanance = new Button();
             btnExitAssignMaintanace = new Button();
             btnAssignMaintanance = new Button();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
+            grpAssignMaintanance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -61,6 +64,7 @@
             // grpAssignMaintanance
             // 
             grpAssignMaintanance.BackColor = Color.White;
+            grpAssignMaintanance.Controls.Add(dataGridView1);
             grpAssignMaintanance.Location = new Point(93, 92);
             grpAssignMaintanance.Name = "grpAssignMaintanance";
             grpAssignMaintanance.Size = new Size(605, 264);
@@ -103,6 +107,15 @@
             btnAssignMaintanance.UseVisualStyleBackColor = false;
             btnAssignMaintanance.Click += btnAssignMaintanance_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(21, 26);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(567, 223);
+            dataGridView1.TabIndex = 0;
+            // 
             // assignmaintananceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -117,6 +130,8 @@
             Text = "assignmaintananceForm";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            grpAssignMaintanance.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -128,5 +143,6 @@
         private Button btnSeeAssignMaintanance;
         private Button btnExitAssignMaintanace;
         private Button btnAssignMaintanance;
+        private DataGridView dataGridView1;
     }
 }

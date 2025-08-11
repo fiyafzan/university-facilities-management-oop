@@ -31,9 +31,12 @@
             panel1 = new Panel();
             label1 = new Label();
             grpFacilitiesDetails2 = new GroupBox();
+            dataFacilityDetails2 = new DataGridView();
             btnExitDeleteFacilities = new Button();
             btnConfirmDeleteFacilities = new Button();
             panel1.SuspendLayout();
+            grpFacilitiesDetails2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataFacilityDetails2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -60,12 +63,23 @@
             // grpFacilitiesDetails2
             // 
             grpFacilitiesDetails2.BackColor = Color.White;
+            grpFacilitiesDetails2.Controls.Add(dataFacilityDetails2);
             grpFacilitiesDetails2.Location = new Point(105, 83);
             grpFacilitiesDetails2.Name = "grpFacilitiesDetails2";
             grpFacilitiesDetails2.Size = new Size(590, 285);
             grpFacilitiesDetails2.TabIndex = 15;
             grpFacilitiesDetails2.TabStop = false;
             grpFacilitiesDetails2.Text = "Facilities Details";
+            // 
+            // dataFacilityDetails2
+            // 
+            dataFacilityDetails2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataFacilityDetails2.Location = new Point(15, 26);
+            dataFacilityDetails2.Name = "dataFacilityDetails2";
+            dataFacilityDetails2.RowHeadersWidth = 51;
+            dataFacilityDetails2.Size = new Size(558, 240);
+            dataFacilityDetails2.TabIndex = 0;
+            dataFacilityDetails2.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnExitDeleteFacilities
             // 
@@ -89,6 +103,7 @@
             btnConfirmDeleteFacilities.TabIndex = 17;
             btnConfirmDeleteFacilities.Text = "Confirm Delete";
             btnConfirmDeleteFacilities.UseVisualStyleBackColor = false;
+            btnConfirmDeleteFacilities.Click += btnConfirmDeleteFacilities_Click;
             // 
             // deletefacilitiesForm
             // 
@@ -101,8 +116,11 @@
             Controls.Add(panel1);
             Name = "deletefacilitiesForm";
             Text = "deletefacilitiesForm";
+            Load += deletefacilitiesForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            grpFacilitiesDetails2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataFacilityDetails2).EndInit();
             ResumeLayout(false);
         }
 
@@ -113,5 +131,6 @@
         private GroupBox grpFacilitiesDetails2;
         private Button btnExitDeleteFacilities;
         private Button btnConfirmDeleteFacilities;
+        private DataGridView dataFacilityDetails2;
     }
 }

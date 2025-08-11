@@ -38,7 +38,7 @@
             label2 = new Label();
             txtAddFacilityRate = new TextBox();
             label3 = new Label();
-            txtAddFacilityType = new TextBox();
+            txtAddFacilityCategory = new TextBox();
             txtAddUniversity = new TextBox();
             btnExitAddFacility = new Button();
             btnConfirmAddFacility = new Button();
@@ -81,7 +81,7 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(txtAddFacilityRate);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(txtAddFacilityType);
+            panel2.Controls.Add(txtAddFacilityCategory);
             panel2.Controls.Add(txtAddUniversity);
             panel2.ForeColor = Color.Black;
             panel2.Location = new Point(201, 115);
@@ -122,11 +122,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(62, 60);
+            label2.Location = new Point(11, 60);
             label2.Name = "label2";
-            label2.Size = new Size(174, 31);
+            label2.Size = new Size(225, 31);
             label2.TabIndex = 7;
-            label2.Text = "Facility Type :";
+            label2.Text = "Facility Category :";
             // 
             // txtAddFacilityRate
             // 
@@ -146,13 +146,14 @@
             label3.TabIndex = 8;
             label3.Text = "Facility Rate (/hr) :";
             // 
-            // txtAddFacilityType
+            // txtAddFacilityCategory
             // 
-            txtAddFacilityType.Font = new Font("Roboto", 9F);
-            txtAddFacilityType.Location = new Point(242, 65);
-            txtAddFacilityType.Name = "txtAddFacilityType";
-            txtAddFacilityType.Size = new Size(125, 26);
-            txtAddFacilityType.TabIndex = 10;
+            txtAddFacilityCategory.Font = new Font("Roboto", 9F);
+            txtAddFacilityCategory.Location = new Point(242, 65);
+            txtAddFacilityCategory.Name = "txtAddFacilityCategory";
+            txtAddFacilityCategory.Size = new Size(125, 26);
+            txtAddFacilityCategory.TabIndex = 10;
+            txtAddFacilityCategory.TextChanged += txtAddFacilityCategory_TextChanged;
             // 
             // txtAddUniversity
             // 
@@ -184,6 +185,7 @@
             btnConfirmAddFacility.TabIndex = 15;
             btnConfirmAddFacility.Text = "Confirm Add";
             btnConfirmAddFacility.UseVisualStyleBackColor = false;
+            btnConfirmAddFacility.Click += btnConfirmAddFacility_Click;
             // 
             // pictureBox1
             // 
@@ -238,7 +240,7 @@
         private Label label2;
         private TextBox txtAddFacilityRate;
         private Label label3;
-        private TextBox txtAddFacilityType;
+        private TextBox txtAddFacilityCategory;
         private TextBox txtAddUniversity;
         private Button btnExitAddFacility;
         private Button btnConfirmAddFacility;
