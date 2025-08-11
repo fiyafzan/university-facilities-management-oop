@@ -33,7 +33,10 @@
             btnExitDeleteUser = new Button();
             btnConfirmDeleteUser = new Button();
             grpUserDetails2 = new GroupBox();
+            dataUserDetails2 = new DataGridView();
             panel1.SuspendLayout();
+            grpUserDetails2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataUserDetails2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -80,16 +83,28 @@
             btnConfirmDeleteUser.TabIndex = 15;
             btnConfirmDeleteUser.Text = "Confirm Delete";
             btnConfirmDeleteUser.UseVisualStyleBackColor = false;
+            btnConfirmDeleteUser.Click += btnConfirmDeleteUser_Click;
             // 
             // grpUserDetails2
             // 
             grpUserDetails2.BackColor = Color.White;
+            grpUserDetails2.Controls.Add(dataUserDetails2);
             grpUserDetails2.Location = new Point(90, 70);
             grpUserDetails2.Name = "grpUserDetails2";
             grpUserDetails2.Size = new Size(590, 285);
             grpUserDetails2.TabIndex = 14;
             grpUserDetails2.TabStop = false;
             grpUserDetails2.Text = "User Details";
+            // 
+            // dataUserDetails2
+            // 
+            dataUserDetails2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataUserDetails2.Location = new Point(16, 26);
+            dataUserDetails2.Name = "dataUserDetails2";
+            dataUserDetails2.RowHeadersWidth = 51;
+            dataUserDetails2.Size = new Size(558, 238);
+            dataUserDetails2.TabIndex = 0;
+            dataUserDetails2.CellContentClick += dataUserDetails2_CellContentClick;
             // 
             // deleteuserForm
             // 
@@ -102,8 +117,11 @@
             Controls.Add(panel1);
             Name = "deleteuserForm";
             Text = "deleteuserForm";
+            Load += deleteuserForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            grpUserDetails2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataUserDetails2).EndInit();
             ResumeLayout(false);
         }
 
@@ -114,5 +132,6 @@
         private Button btnExitDeleteUser;
         private Button btnConfirmDeleteUser;
         private GroupBox grpUserDetails2;
+        private DataGridView dataUserDetails2;
     }
 }

@@ -199,6 +199,7 @@
             Controls.Add(btnConfirmAddUser);
             Name = "adduserForm";
             Text = "adduserForm";
+            Load += adduserForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

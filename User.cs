@@ -14,6 +14,8 @@ namespace ioopassignment
         private string username;
         private string password;
         private string role;
+
+        // conection string to connect to sql database
         static SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
 
@@ -36,7 +38,7 @@ namespace ioopassignment
             set { role = value; }
         }
 
-        //
+        //compiled all constructor under one constructor called User
         public User(string name, string password, string role)
         {
             this.username = name;
@@ -44,6 +46,7 @@ namespace ioopassignment
             this.role = role;
         }
 
+        //add user
         public string addUser()
         {
             string status;
@@ -56,9 +59,11 @@ namespace ioopassignment
             cmd.Parameters.AddWithValue("@name", this.username);
             cmd.Parameters.AddWithValue("@password", this.password);
             cmd.Parameters.AddWithValue("@role", this.role);
-
+            
+            // run the command
             int i = cmd.ExecuteNonQuery();
 
+            // message if registration is successful or not
             if (i != 0)
             {
                 status = "Registration Successsful";
@@ -66,9 +71,7 @@ namespace ioopassignment
             else
             {
                 status = "Unable to Register";
-            }
-
-            con.Close();
+            }           
             return status;
         }
     }

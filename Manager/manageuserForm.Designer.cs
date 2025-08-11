@@ -32,9 +32,12 @@
             btnDeleteUser = new Button();
             btnExitManageUser = new Button();
             grpUserDetails = new GroupBox();
+            dataUserDetails = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
             btnSeeUser = new Button();
+            grpUserDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataUserDetails).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,6 +80,7 @@
             // grpUserDetails
             // 
             grpUserDetails.BackColor = Color.White;
+            grpUserDetails.Controls.Add(dataUserDetails);
             grpUserDetails.Location = new Point(96, 71);
             grpUserDetails.Name = "grpUserDetails";
             grpUserDetails.Size = new Size(590, 285);
@@ -84,6 +88,16 @@
             grpUserDetails.TabStop = false;
             grpUserDetails.Text = "User Details";
             grpUserDetails.Enter += grpUserDetails_Enter;
+            // 
+            // dataUserDetails
+            // 
+            dataUserDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataUserDetails.Location = new Point(16, 36);
+            dataUserDetails.Name = "dataUserDetails";
+            dataUserDetails.RowHeadersWidth = 51;
+            dataUserDetails.Size = new Size(560, 230);
+            dataUserDetails.TabIndex = 0;
+            dataUserDetails.CellContentClick += dataUserDetails_CellContentClick_1;
             // 
             // panel1
             // 
@@ -133,6 +147,8 @@
             Name = "manageuserForm";
             Text = "manageuserForm";
             Load += manageuserForm_Load;
+            grpUserDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataUserDetails).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -147,5 +163,6 @@
         private Panel panel1;
         private Label label1;
         private Button btnSeeUser;
+        private DataGridView dataUserDetails;
     }
 }
