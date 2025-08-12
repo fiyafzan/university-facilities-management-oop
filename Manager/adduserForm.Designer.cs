@@ -52,7 +52,7 @@
             // 
             btnExitAddUser.BackColor = Color.FromArgb(255, 224, 192);
             btnExitAddUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAddUser.Location = new Point(414, 357);
+            btnExitAddUser.Location = new Point(404, 325);
             btnExitAddUser.Name = "btnExitAddUser";
             btnExitAddUser.Size = new Size(153, 41);
             btnExitAddUser.TabIndex = 5;
@@ -64,7 +64,7 @@
             // 
             btnConfirmAddUser.BackColor = Color.FromArgb(255, 224, 192);
             btnConfirmAddUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmAddUser.Location = new Point(238, 357);
+            btnConfirmAddUser.Location = new Point(245, 325);
             btnConfirmAddUser.Name = "btnConfirmAddUser";
             btnConfirmAddUser.Size = new Size(153, 41);
             btnConfirmAddUser.TabIndex = 4;
@@ -133,18 +133,18 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label4);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(605, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(286, 45);
+            panel1.Size = new Size(183, 33);
             panel1.TabIndex = 13;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(3, 7);
             label4.Name = "label4";
-            label4.Size = new Size(277, 31);
+            label4.Size = new Size(176, 20);
             label4.TabIndex = 0;
             label4.Text = "ARFMS Add User Form";
             // 
@@ -159,7 +159,7 @@
             panel2.Controls.Add(txtAddPassword);
             panel2.Controls.Add(txtAddUsername);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(211, 105);
+            panel2.Location = new Point(212, 71);
             panel2.Name = "panel2";
             panel2.Size = new Size(375, 237);
             panel2.TabIndex = 14;
@@ -168,7 +168,7 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 149);
+            pictureBox1.Location = new Point(12, 123);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(183, 159);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -179,7 +179,7 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(605, 149);
+            pictureBox2.Location = new Point(603, 100);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(183, 159);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -190,6 +190,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -197,6 +199,7 @@
             Controls.Add(panel1);
             Controls.Add(btnExitAddUser);
             Controls.Add(btnConfirmAddUser);
+            DoubleBuffered = true;
             Name = "adduserForm";
             Text = "adduserForm";
             Load += adduserForm_Load;

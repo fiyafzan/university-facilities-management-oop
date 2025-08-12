@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ioopassignment.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -61,7 +62,9 @@ namespace ioopassignment
 
         private void btnEditFacilities_Click(object sender, EventArgs e)
         {
-
+            editfacilitiesForm f3 = new editfacilitiesForm();
+            f3.Show();   
+            this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

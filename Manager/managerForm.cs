@@ -44,5 +44,9 @@ namespace ioopassignment
             f5.Show();
             this.Hide();
         }
+
+        private void managerForm_Load(object sender, EventArgs e)
+        {        
+        }
     }
 }

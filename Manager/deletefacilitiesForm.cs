@@ -117,5 +117,10 @@ namespace ioopassignment
                 MessageBox.Show("Error deleting record: " + ex.Message);
             }
         }
-    } 
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

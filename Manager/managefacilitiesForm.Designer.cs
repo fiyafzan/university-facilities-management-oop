@@ -48,18 +48,18 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label1);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(542, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(374, 45);
+            panel1.Size = new Size(246, 40);
             panel1.TabIndex = 13;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 7);
             label1.Name = "label1";
-            label1.Size = new Size(369, 31);
+            label1.Size = new Size(238, 20);
             label1.TabIndex = 0;
             label1.Text = "ARFMS Manage Facilities Form";
             label1.Click += label1_Click;
@@ -68,7 +68,7 @@
             // 
             btnSeeFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnSeeFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnSeeFacilities.Location = new Point(392, 17);
+            btnSeeFacilities.Location = new Point(447, 15);
             btnSeeFacilities.Name = "btnSeeFacilities";
             btnSeeFacilities.Size = new Size(89, 35);
             btnSeeFacilities.TabIndex = 14;
@@ -80,9 +80,9 @@
             // 
             grpFacilitiesDetails.BackColor = Color.White;
             grpFacilitiesDetails.Controls.Add(dataFacilityDetails);
-            grpFacilitiesDetails.Location = new Point(105, 83);
+            grpFacilitiesDetails.Location = new Point(132, 58);
             grpFacilitiesDetails.Name = "grpFacilitiesDetails";
-            grpFacilitiesDetails.Size = new Size(590, 285);
+            grpFacilitiesDetails.Size = new Size(537, 257);
             grpFacilitiesDetails.TabIndex = 15;
             grpFacilitiesDetails.TabStop = false;
             grpFacilitiesDetails.Text = "Facilities Details";
@@ -94,7 +94,7 @@
             dataFacilityDetails.Location = new Point(17, 26);
             dataFacilityDetails.Name = "dataFacilityDetails";
             dataFacilityDetails.RowHeadersWidth = 51;
-            dataFacilityDetails.Size = new Size(556, 241);
+            dataFacilityDetails.Size = new Size(504, 214);
             dataFacilityDetails.TabIndex = 0;
             dataFacilityDetails.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -102,7 +102,7 @@
             // 
             btnExitManageFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnExitManageFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitManageFacilities.Location = new Point(625, 385);
+            btnExitManageFacilities.Location = new Point(618, 340);
             btnExitManageFacilities.Name = "btnExitManageFacilities";
             btnExitManageFacilities.Size = new Size(153, 41);
             btnExitManageFacilities.TabIndex = 18;
@@ -114,7 +114,7 @@
             // 
             btnDeleteFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnDeleteFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnDeleteFacilities.Location = new Point(233, 385);
+            btnDeleteFacilities.Location = new Point(226, 340);
             btnDeleteFacilities.Name = "btnDeleteFacilities";
             btnDeleteFacilities.Size = new Size(153, 41);
             btnDeleteFacilities.TabIndex = 17;
@@ -126,7 +126,7 @@
             // 
             btnAddFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnAddFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnAddFacilities.Location = new Point(29, 385);
+            btnAddFacilities.Location = new Point(22, 340);
             btnAddFacilities.Name = "btnAddFacilities";
             btnAddFacilities.Size = new Size(153, 41);
             btnAddFacilities.TabIndex = 16;
@@ -138,7 +138,7 @@
             // 
             btnEditFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnEditFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnEditFacilities.Location = new Point(429, 385);
+            btnEditFacilities.Location = new Point(422, 340);
             btnEditFacilities.Name = "btnEditFacilities";
             btnEditFacilities.Size = new Size(153, 41);
             btnEditFacilities.TabIndex = 19;
@@ -150,6 +150,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(btnEditFacilities);
             Controls.Add(btnExitManageFacilities);
@@ -158,6 +160,7 @@
             Controls.Add(grpFacilitiesDetails);
             Controls.Add(btnSeeFacilities);
             Controls.Add(panel1);
+            DoubleBuffered = true;
             Name = "managefacilitiesForm";
             Text = "managefacilitiesForm";
             Load += managefacilitiesForm_Load;

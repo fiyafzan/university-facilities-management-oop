@@ -56,18 +56,18 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label4);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(573, 23);
             panel1.Name = "panel1";
-            panel1.Size = new Size(338, 45);
+            panel1.Size = new Size(215, 28);
             panel1.TabIndex = 14;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 7);
+            label4.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(-2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(329, 31);
+            label4.Size = new Size(211, 20);
             label4.TabIndex = 0;
             label4.Text = "ARFMS Add Facilities Form";
             // 
@@ -84,7 +84,7 @@
             panel2.Controls.Add(txtAddFacilityCategory);
             panel2.Controls.Add(txtAddUniversity);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(201, 115);
+            panel2.Location = new Point(204, 97);
             panel2.Name = "panel2";
             panel2.Size = new Size(386, 208);
             panel2.TabIndex = 17;
@@ -167,7 +167,7 @@
             // 
             btnExitAddFacility.BackColor = Color.FromArgb(255, 224, 192);
             btnExitAddFacility.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAddFacility.Location = new Point(401, 341);
+            btnExitAddFacility.Location = new Point(404, 323);
             btnExitAddFacility.Name = "btnExitAddFacility";
             btnExitAddFacility.Size = new Size(153, 41);
             btnExitAddFacility.TabIndex = 16;
@@ -179,7 +179,7 @@
             // 
             btnConfirmAddFacility.BackColor = Color.FromArgb(255, 224, 192);
             btnConfirmAddFacility.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmAddFacility.Location = new Point(233, 341);
+            btnConfirmAddFacility.Location = new Point(236, 323);
             btnConfirmAddFacility.Name = "btnConfirmAddFacility";
             btnConfirmAddFacility.Size = new Size(153, 41);
             btnConfirmAddFacility.TabIndex = 15;
@@ -191,7 +191,7 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 135);
+            pictureBox1.Location = new Point(14, 120);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(173, 169);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -202,7 +202,7 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(605, 135);
+            pictureBox2.Location = new Point(607, 120);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(183, 159);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -213,6 +213,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -220,6 +222,7 @@
             Controls.Add(btnExitAddFacility);
             Controls.Add(btnConfirmAddFacility);
             Controls.Add(panel1);
+            DoubleBuffered = true;
             Name = "addfacilitiesForm";
             Text = "addfacilitiesForm";
             panel1.ResumeLayout(false);

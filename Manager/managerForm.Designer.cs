@@ -46,7 +46,7 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(540, 219);
+            pictureBox2.Location = new Point(540, 192);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(248, 151);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -57,7 +57,7 @@
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 219);
+            pictureBox1.Location = new Point(12, 192);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(214, 151);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -68,7 +68,7 @@
             // 
             btnHandleRequest.BackColor = Color.FromArgb(255, 224, 192);
             btnHandleRequest.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnHandleRequest.Location = new Point(255, 369);
+            btnHandleRequest.Location = new Point(253, 349);
             btnHandleRequest.Name = "btnHandleRequest";
             btnHandleRequest.Size = new Size(253, 36);
             btnHandleRequest.TabIndex = 14;
@@ -80,7 +80,7 @@
             // 
             btnAssignMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnAssignMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnAssignMaintanance.Location = new Point(255, 306);
+            btnAssignMaintanance.Location = new Point(253, 286);
             btnAssignMaintanance.Name = "btnAssignMaintanance";
             btnAssignMaintanance.Size = new Size(253, 36);
             btnAssignMaintanance.TabIndex = 13;
@@ -92,7 +92,7 @@
             // 
             btnManageFacilities.BackColor = Color.FromArgb(255, 224, 192);
             btnManageFacilities.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnManageFacilities.Location = new Point(255, 245);
+            btnManageFacilities.Location = new Point(253, 225);
             btnManageFacilities.Name = "btnManageFacilities";
             btnManageFacilities.Size = new Size(253, 36);
             btnManageFacilities.TabIndex = 12;
@@ -106,16 +106,16 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label1);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 34);
+            panel1.Location = new Point(12, 56);
             panel1.Name = "panel1";
-            panel1.Size = new Size(776, 125);
+            panel1.Size = new Size(776, 94);
             panel1.TabIndex = 11;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Poor Richard", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(82, 14);
+            label1.Location = new Point(85, 0);
             label1.Name = "label1";
             label1.Size = new Size(573, 90);
             label1.TabIndex = 0;
@@ -125,7 +125,7 @@
             // 
             btnManageUser.BackColor = Color.FromArgb(255, 224, 192);
             btnManageUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnManageUser.Location = new Point(255, 185);
+            btnManageUser.Location = new Point(253, 165);
             btnManageUser.Name = "btnManageUser";
             btnManageUser.Size = new Size(253, 36);
             btnManageUser.TabIndex = 10;
@@ -137,6 +137,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -145,8 +147,10 @@
             Controls.Add(btnManageFacilities);
             Controls.Add(panel1);
             Controls.Add(btnManageUser);
+            DoubleBuffered = true;
             Name = "managerForm";
             Text = "managerForm";
+            Load += managerForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);

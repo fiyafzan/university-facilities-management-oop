@@ -59,5 +59,15 @@ namespace ioopassignment.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_08_12_093429 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-08-12 093429", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

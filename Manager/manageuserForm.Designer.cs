@@ -45,7 +45,7 @@
             // 
             btnAddUser.BackColor = Color.FromArgb(255, 224, 192);
             btnAddUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnAddUser.Location = new Point(127, 382);
+            btnAddUser.Location = new Point(130, 354);
             btnAddUser.Name = "btnAddUser";
             btnAddUser.Size = new Size(153, 41);
             btnAddUser.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             btnDeleteUser.BackColor = Color.FromArgb(255, 224, 192);
             btnDeleteUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnDeleteUser.Location = new Point(312, 382);
+            btnDeleteUser.Location = new Point(315, 354);
             btnDeleteUser.Name = "btnDeleteUser";
             btnDeleteUser.Size = new Size(153, 41);
             btnDeleteUser.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             btnExitManageUser.BackColor = Color.FromArgb(255, 224, 192);
             btnExitManageUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitManageUser.Location = new Point(502, 382);
+            btnExitManageUser.Location = new Point(505, 354);
             btnExitManageUser.Name = "btnExitManageUser";
             btnExitManageUser.Size = new Size(153, 41);
             btnExitManageUser.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             grpUserDetails.BackColor = Color.White;
             grpUserDetails.Controls.Add(dataUserDetails);
-            grpUserDetails.Location = new Point(96, 71);
+            grpUserDetails.Location = new Point(97, 63);
             grpUserDetails.Name = "grpUserDetails";
             grpUserDetails.Size = new Size(590, 285);
             grpUserDetails.TabIndex = 4;
@@ -105,18 +105,18 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label1);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 7);
+            panel1.Location = new Point(577, 17);
             panel1.Name = "panel1";
-            panel1.Size = new Size(324, 45);
+            panel1.Size = new Size(211, 32);
             panel1.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(3, 7);
+            label1.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(3, 3);
             label1.Name = "label1";
-            label1.Size = new Size(317, 31);
+            label1.Size = new Size(203, 20);
             label1.TabIndex = 0;
             label1.Text = "ARFMS Manage User Form";
             // 
@@ -124,7 +124,7 @@
             // 
             btnSeeUser.BackColor = Color.FromArgb(255, 224, 192);
             btnSeeUser.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnSeeUser.Location = new Point(354, 12);
+            btnSeeUser.Location = new Point(482, 16);
             btnSeeUser.Name = "btnSeeUser";
             btnSeeUser.Size = new Size(89, 35);
             btnSeeUser.TabIndex = 13;
@@ -137,6 +137,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(btnSeeUser);
             Controls.Add(panel1);
@@ -144,6 +146,7 @@
             Controls.Add(btnExitManageUser);
             Controls.Add(btnDeleteUser);
             Controls.Add(btnAddUser);
+            DoubleBuffered = true;
             Name = "manageuserForm";
             Text = "manageuserForm";
             Load += manageuserForm_Load;
