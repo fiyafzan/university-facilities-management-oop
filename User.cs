@@ -73,6 +73,8 @@ namespace ioopassignment
                 status = "Unable to Register";
             }           
             return status;
+
+            con.Close();
         }
     }
 }

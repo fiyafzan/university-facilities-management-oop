@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
+            comboboxDuration = new ComboBox();
+            comboboxFacilityType = new ComboBox();
+            comboboxUniversity = new ComboBox();
+            txtAssignMaintanance = new TextBox();
             txtDateAssignMaintanance = new TextBox();
             label5 = new Label();
             label6 = new Label();
@@ -42,10 +46,6 @@
             btnConfirmAddMaintanance = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -56,10 +56,10 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(comboboxDuration);
+            panel2.Controls.Add(comboboxFacilityType);
+            panel2.Controls.Add(comboboxUniversity);
+            panel2.Controls.Add(txtAssignMaintanance);
             panel2.Controls.Add(txtDateAssignMaintanance);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label6);
@@ -71,6 +71,37 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(402, 231);
             panel2.TabIndex = 20;
+            // 
+            // comboboxDuration
+            // 
+            comboboxDuration.FormattingEnabled = true;
+            comboboxDuration.Location = new Point(239, 104);
+            comboboxDuration.Name = "comboboxDuration";
+            comboboxDuration.Size = new Size(151, 28);
+            comboboxDuration.TabIndex = 24;
+            // 
+            // comboboxFacilityType
+            // 
+            comboboxFacilityType.FormattingEnabled = true;
+            comboboxFacilityType.Location = new Point(239, 59);
+            comboboxFacilityType.Name = "comboboxFacilityType";
+            comboboxFacilityType.Size = new Size(151, 28);
+            comboboxFacilityType.TabIndex = 23;
+            // 
+            // comboboxUniversity
+            // 
+            comboboxUniversity.FormattingEnabled = true;
+            comboboxUniversity.Location = new Point(239, 13);
+            comboboxUniversity.Name = "comboboxUniversity";
+            comboboxUniversity.Size = new Size(151, 28);
+            comboboxUniversity.TabIndex = 22;
+            // 
+            // txtAssignMaintanance
+            // 
+            txtAssignMaintanance.Location = new Point(239, 194);
+            txtAssignMaintanance.Name = "txtAssignMaintanance";
+            txtAssignMaintanance.Size = new Size(151, 27);
+            txtAssignMaintanance.TabIndex = 21;
             // 
             // txtDateAssignMaintanance
             // 
@@ -198,34 +229,6 @@
             pictureBox1.TabIndex = 24;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(239, 194);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 27);
-            textBox1.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(239, 107);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(151, 27);
-            textBox2.TabIndex = 22;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(239, 62);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(151, 27);
-            textBox3.TabIndex = 23;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(239, 16);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(151, 27);
-            textBox4.TabIndex = 24;
-            // 
             // assignmaintanance2Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -239,6 +242,7 @@
             Controls.Add(panel2);
             Name = "assignmaintanance2Form";
             Text = "assignmaintanance2Form";
+            Load += assignmaintanance2Form_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -265,6 +269,9 @@
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtAssignMaintanance;
+        private ComboBox comboboxUniversity;
+        private ComboBox comboboxDuration;
+        private ComboBox comboboxFacilityType;
     }
 }

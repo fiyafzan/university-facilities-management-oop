@@ -37,7 +37,7 @@ namespace ioopassignment
         private void btnConfirmAddFacility_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            Facility addfacility = new Facility(txtAddUniversity.Text, txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text);
+            Facility addfacility = new Facility(txtAddUniversity.Text, txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text, txtAddAvailability.Text);
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(addfacility.addFacility());
@@ -47,9 +47,20 @@ namespace ioopassignment
             txtAddFacilityCategory.Text = String.Empty;
             txtAddFacilityRate.Text = String.Empty;
             txtAddFacilityCapacity.Text = String.Empty;
+            txtAddAvailability.Text = String.Empty;
         }
 
         private void txtAddFacilityCategory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addfacilitiesForm_Load(object sender, EventArgs e)
         {
 
         }

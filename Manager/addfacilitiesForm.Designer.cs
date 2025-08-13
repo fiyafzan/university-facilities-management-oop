@@ -32,6 +32,8 @@
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
+            txtAddAvailability = new TextBox();
+            label5 = new Label();
             txtAddFacilityCapacity = new TextBox();
             label6 = new Label();
             label1 = new Label();
@@ -75,6 +77,8 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(txtAddAvailability);
+            panel2.Controls.Add(label5);
             panel2.Controls.Add(txtAddFacilityCapacity);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label1);
@@ -84,10 +88,29 @@
             panel2.Controls.Add(txtAddFacilityCategory);
             panel2.Controls.Add(txtAddUniversity);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(204, 97);
+            panel2.Location = new Point(203, 71);
             panel2.Name = "panel2";
-            panel2.Size = new Size(386, 208);
+            panel2.Size = new Size(386, 246);
             panel2.TabIndex = 17;
+            // 
+            // txtAddAvailability
+            // 
+            txtAddAvailability.Font = new Font("Roboto", 9F);
+            txtAddAvailability.Location = new Point(242, 205);
+            txtAddAvailability.Name = "txtAddAvailability";
+            txtAddAvailability.Size = new Size(125, 26);
+            txtAddAvailability.TabIndex = 17;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Location = new Point(2, 200);
+            label5.Name = "label5";
+            label5.Size = new Size(234, 31);
+            label5.TabIndex = 16;
+            label5.Text = "Availability (y/n) :";
+            label5.Click += label5_Click_1;
             // 
             // txtAddFacilityCapacity
             // 
@@ -225,6 +248,7 @@
             DoubleBuffered = true;
             Name = "addfacilitiesForm";
             Text = "addfacilitiesForm";
+            Load += addfacilitiesForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -251,5 +275,7 @@
         private Label label6;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Label label5;
+        private TextBox txtAddAvailability;
     }
 }
