@@ -14,17 +14,17 @@ namespace ioopassignment
     internal class Facility
     {
         // private field
-        private string university;
+        private string UniId;
         private string facility_category;
         private string facility_rate;
         private string facility_capacity;
         private string facility_availability;
 
         //properties with getter and setter which are username and password
-        public string University
+        public string uniid
         {
-            get { return university; }
-            set { university = value; }
+            get { return UniId; }
+            set { UniId = value; }
         }
 
         public string Facility_category
@@ -53,7 +53,7 @@ namespace ioopassignment
         //compiled all constructor under one constructor called User
         public Facility(string university, string facilitycategory, string facilityrate, string capacity, string availability)
         {
-            this.university = university;
+            this.UniId = university;
             this.facility_category = facilitycategory;
             this.facility_rate = facilityrate;
             this.facility_capacity = capacity;
@@ -74,8 +74,8 @@ namespace ioopassignment
             con.Open();
 
             //cmd is to insert a record into users table
-            SqlCommand cmd = new SqlCommand("Insert into facilities(university, [facility category], [facility rate (/hr)], capacity, [availability (y/n)]) values(@university,@facilitycategory,@facilityrate,@capacity,@availability)", con);
-            cmd.Parameters.AddWithValue("@university", this.university);
+            SqlCommand cmd = new SqlCommand("Insert into facilities(UniId, [facility category], [facility rate (/hr)], capacity, [availability (y/n)]) values(@university,@facilitycategory,@facilityrate,@capacity,@availability)", con);
+            cmd.Parameters.AddWithValue("@university", this.UniId);
             cmd.Parameters.AddWithValue("@facilitycategory", this.facility_category);
             cmd.Parameters.AddWithValue("@facilityrate", this.facility_rate);
             cmd.Parameters.AddWithValue("@capacity", this.facility_capacity);
@@ -93,8 +93,9 @@ namespace ioopassignment
             {
                 status = "Unable to Add";
             }
-            return status;
+
             con.Close();
+            return status;            
         }
     }
 }

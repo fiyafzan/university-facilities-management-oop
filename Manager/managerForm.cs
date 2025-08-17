@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ioopassignment.Manager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,7 +47,24 @@ namespace ioopassignment
         }
 
         private void managerForm_Load(object sender, EventArgs e)
-        {        
+        {
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManageUniversities_Click(object sender, EventArgs e)
+        {
+            manageuniversitiesForm f1 = new manageuniversitiesForm();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

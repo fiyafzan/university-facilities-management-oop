@@ -57,9 +57,9 @@
             label4.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(-2, 3);
             label4.Name = "label4";
-            label4.Size = new Size(256, 20);
+            label4.Size = new Size(255, 20);
             label4.TabIndex = 0;
-            label4.Text = "ARFMS Assign Maintanance Form";
+            label4.Text = "ARFMS Assign Maintenance Form";
             // 
             // grpAssignMaintanance
             // 
@@ -114,7 +114,7 @@
             btnAssignMaintanance.Name = "btnAssignMaintanance";
             btnAssignMaintanance.Size = new Size(197, 41);
             btnAssignMaintanance.TabIndex = 19;
-            btnAssignMaintanance.Text = "Assign Maintanance";
+            btnAssignMaintanance.Text = "Assign Maintenance";
             btnAssignMaintanance.UseVisualStyleBackColor = false;
             btnAssignMaintanance.Click += btnAssignMaintanance_Click;
             // 

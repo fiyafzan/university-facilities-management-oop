@@ -33,7 +33,7 @@ namespace ioopassignment
         private void btnConfirmAddUser_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            User adduser = new User(txtAddUsername.Text, txtAddPassword.Text, txtAddRole.Text);
+            User adduser = new User(txtAddUsername.Text, txtAddPassword.Text, cboRole.SelectedItem.ToString());
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(adduser.addUser());
@@ -41,10 +41,21 @@ namespace ioopassignment
             //convert to string from text
             txtAddUsername.Text = String.Empty;
             txtAddPassword.Text = String.Empty;
-            txtAddRole.Text = String.Empty;            
         }
 
         private void adduserForm_Load(object sender, EventArgs e)
+        {
+            if (cboRole != null) // ensure it's not null
+            {
+                cboRole.Items.Clear();
+                cboRole.Items.Add("manager");
+                cboRole.Items.Add("receptionist");
+                cboRole.Items.Add("maintenance");
+                cboRole.SelectedIndex = 0; // set default selection
+            }
+        }
+
+        private void txtAddRole_TextChanged(object sender, EventArgs e)
         {
 
         }

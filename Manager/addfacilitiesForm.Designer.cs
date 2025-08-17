@@ -41,11 +41,11 @@
             txtAddFacilityRate = new TextBox();
             label3 = new Label();
             txtAddFacilityCategory = new TextBox();
-            txtAddUniversity = new TextBox();
             btnExitAddFacility = new Button();
             btnConfirmAddFacility = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            comboboxUniversity = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -77,6 +77,7 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(comboboxUniversity);
             panel2.Controls.Add(txtAddAvailability);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(txtAddFacilityCapacity);
@@ -86,7 +87,6 @@
             panel2.Controls.Add(txtAddFacilityRate);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(txtAddFacilityCategory);
-            panel2.Controls.Add(txtAddUniversity);
             panel2.ForeColor = Color.Black;
             panel2.Location = new Point(203, 71);
             panel2.Name = "panel2";
@@ -178,14 +178,6 @@
             txtAddFacilityCategory.TabIndex = 10;
             txtAddFacilityCategory.TextChanged += txtAddFacilityCategory_TextChanged;
             // 
-            // txtAddUniversity
-            // 
-            txtAddUniversity.Font = new Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAddUniversity.Location = new Point(242, 19);
-            txtAddUniversity.Name = "txtAddUniversity";
-            txtAddUniversity.Size = new Size(125, 26);
-            txtAddUniversity.TabIndex = 9;
-            // 
             // btnExitAddFacility
             // 
             btnExitAddFacility.BackColor = Color.FromArgb(255, 224, 192);
@@ -232,6 +224,14 @@
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
             // 
+            // comboboxUniversity
+            // 
+            comboboxUniversity.FormattingEnabled = true;
+            comboboxUniversity.Location = new Point(242, 22);
+            comboboxUniversity.Name = "comboboxUniversity";
+            comboboxUniversity.Size = new Size(125, 28);
+            comboboxUniversity.TabIndex = 18;
+            // 
             // addfacilitiesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -268,7 +268,6 @@
         private TextBox txtAddFacilityRate;
         private Label label3;
         private TextBox txtAddFacilityCategory;
-        private TextBox txtAddUniversity;
         private Button btnExitAddFacility;
         private Button btnConfirmAddFacility;
         private TextBox txtAddFacilityCapacity;
@@ -277,5 +276,6 @@
         private PictureBox pictureBox2;
         private Label label5;
         private TextBox txtAddAvailability;
+        private ComboBox comboboxUniversity;
     }
 }

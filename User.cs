@@ -71,10 +71,10 @@ namespace ioopassignment
             else
             {
                 status = "Unable to Register";
-            }           
-            return status;
+            }
 
             con.Close();
+            return status;            
         }
     }
 }

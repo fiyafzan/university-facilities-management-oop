@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
+            comboboxTechnician = new ComboBox();
             comboboxDuration = new ComboBox();
             comboboxFacilityType = new ComboBox();
             comboboxUniversity = new ComboBox();
-            txtAssignMaintanance = new TextBox();
             txtDateAssignMaintanance = new TextBox();
             label5 = new Label();
             label6 = new Label();
@@ -56,10 +56,10 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(comboboxTechnician);
             panel2.Controls.Add(comboboxDuration);
             panel2.Controls.Add(comboboxFacilityType);
             panel2.Controls.Add(comboboxUniversity);
-            panel2.Controls.Add(txtAssignMaintanance);
             panel2.Controls.Add(txtDateAssignMaintanance);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label6);
@@ -67,10 +67,18 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(197, 108);
+            panel2.Location = new Point(197, 93);
             panel2.Name = "panel2";
             panel2.Size = new Size(402, 231);
             panel2.TabIndex = 20;
+            // 
+            // comboboxTechnician
+            // 
+            comboboxTechnician.FormattingEnabled = true;
+            comboboxTechnician.Location = new Point(239, 193);
+            comboboxTechnician.Name = "comboboxTechnician";
+            comboboxTechnician.Size = new Size(151, 28);
+            comboboxTechnician.TabIndex = 25;
             // 
             // comboboxDuration
             // 
@@ -87,6 +95,7 @@
             comboboxFacilityType.Name = "comboboxFacilityType";
             comboboxFacilityType.Size = new Size(151, 28);
             comboboxFacilityType.TabIndex = 23;
+            comboboxFacilityType.SelectedIndexChanged += comboboxFacilityType_SelectedIndexChanged;
             // 
             // comboboxUniversity
             // 
@@ -95,13 +104,7 @@
             comboboxUniversity.Name = "comboboxUniversity";
             comboboxUniversity.Size = new Size(151, 28);
             comboboxUniversity.TabIndex = 22;
-            // 
-            // txtAssignMaintanance
-            // 
-            txtAssignMaintanance.Location = new Point(239, 194);
-            txtAssignMaintanance.Name = "txtAssignMaintanance";
-            txtAssignMaintanance.Size = new Size(151, 27);
-            txtAssignMaintanance.TabIndex = 21;
+            comboboxUniversity.SelectedIndexChanged += comboboxUniversity_SelectedIndexChanged_1;
             // 
             // txtDateAssignMaintanance
             // 
@@ -167,27 +170,27 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label4);
             panel1.ForeColor = Color.Black;
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(488, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(461, 45);
+            panel1.Size = new Size(300, 35);
             panel1.TabIndex = 23;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Poor Richard", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(3, 7);
             label4.Name = "label4";
-            label4.Size = new Size(453, 31);
+            label4.Size = new Size(290, 20);
             label4.TabIndex = 0;
-            label4.Text = "ARFMS Add Assign Maintanance Form";
+            label4.Text = "ARFMS Add Assign Maintenance Form";
             label4.Click += label4_Click;
             // 
             // btnExitAddMaintanance
             // 
             btnExitAddMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnExitAddMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAddMaintanance.Location = new Point(405, 359);
+            btnExitAddMaintanance.Location = new Point(420, 342);
             btnExitAddMaintanance.Name = "btnExitAddMaintanance";
             btnExitAddMaintanance.Size = new Size(153, 41);
             btnExitAddMaintanance.TabIndex = 22;
@@ -199,18 +202,19 @@
             // 
             btnConfirmAddMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnConfirmAddMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmAddMaintanance.Location = new Point(228, 359);
+            btnConfirmAddMaintanance.Location = new Point(243, 342);
             btnConfirmAddMaintanance.Name = "btnConfirmAddMaintanance";
             btnConfirmAddMaintanance.Size = new Size(153, 41);
             btnConfirmAddMaintanance.TabIndex = 21;
-            btnConfirmAddMaintanance.Text = "Confirm Add";
+            btnConfirmAddMaintanance.Text = "Confirm Assign";
             btnConfirmAddMaintanance.UseVisualStyleBackColor = false;
+            btnConfirmAddMaintanance.Click += btnConfirmAddMaintanance_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(605, 141);
+            pictureBox2.Location = new Point(605, 126);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(183, 159);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -233,6 +237,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -240,6 +246,7 @@
             Controls.Add(panel1);
             Controls.Add(btnConfirmAddMaintanance);
             Controls.Add(panel2);
+            DoubleBuffered = true;
             Name = "assignmaintanance2Form";
             Text = "assignmaintanance2Form";
             Load += assignmaintanance2Form_Load;
@@ -266,12 +273,9 @@
         private Button btnConfirmAddMaintanance;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox txtAssignMaintanance;
         private ComboBox comboboxUniversity;
         private ComboBox comboboxDuration;
         private ComboBox comboboxFacilityType;
+        private ComboBox comboboxTechnician;
     }
 }

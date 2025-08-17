@@ -36,10 +36,10 @@
             label3 = new Label();
             txtAddUsername = new TextBox();
             txtAddPassword = new TextBox();
-            txtAddRole = new TextBox();
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
+            cboRole = new ComboBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
@@ -107,7 +107,7 @@
             txtAddUsername.Font = new Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtAddUsername.Location = new Point(190, 50);
             txtAddUsername.Name = "txtAddUsername";
-            txtAddUsername.Size = new Size(125, 26);
+            txtAddUsername.Size = new Size(151, 26);
             txtAddUsername.TabIndex = 9;
             // 
             // txtAddPassword
@@ -115,17 +115,9 @@
             txtAddPassword.Font = new Font("Roboto", 9F);
             txtAddPassword.Location = new Point(190, 105);
             txtAddPassword.Name = "txtAddPassword";
-            txtAddPassword.Size = new Size(125, 26);
+            txtAddPassword.Size = new Size(151, 26);
             txtAddPassword.TabIndex = 10;
             txtAddPassword.TextChanged += txtAddPassword_TextChanged;
-            // 
-            // txtAddRole
-            // 
-            txtAddRole.Font = new Font("Roboto", 9F);
-            txtAddRole.Location = new Point(190, 160);
-            txtAddRole.Name = "txtAddRole";
-            txtAddRole.Size = new Size(125, 26);
-            txtAddRole.TabIndex = 11;
             // 
             // panel1
             // 
@@ -152,9 +144,9 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(cboRole);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(txtAddRole);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(txtAddPassword);
             panel2.Controls.Add(txtAddUsername);
@@ -163,6 +155,14 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(375, 237);
             panel2.TabIndex = 14;
+            // 
+            // cboRole
+            // 
+            cboRole.FormattingEnabled = true;
+            cboRole.Location = new Point(190, 166);
+            cboRole.Name = "cboRole";
+            cboRole.Size = new Size(151, 28);
+            cboRole.TabIndex = 11;
             // 
             // pictureBox1
             // 
@@ -221,11 +221,11 @@
         private Label label3;
         private TextBox txtAddUsername;
         private TextBox txtAddPassword;
-        private TextBox txtAddRole;
         private Panel panel1;
         private Label label4;
         private Panel panel2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private ComboBox cboRole;
     }
 }

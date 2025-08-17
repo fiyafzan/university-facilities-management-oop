@@ -85,7 +85,7 @@ namespace ioopassignment
 
                 // Get the ID value from the first cell in the selected row
                 // convert.toint16 is to convert the id(string) to 16-bit integer
-                int selectedId = Convert.ToInt16(dataFacilityDetails2.SelectedRows[0].Cells["Id"].Value);
+                int selectedId = Convert.ToInt16(dataFacilityDetails2.SelectedRows[0].Cells["FacilitiesId"].Value);
 
                 // Confirm before deleting
                 DialogResult confirm = MessageBox.Show("Are you sure you want to delete this record?",
@@ -101,9 +101,9 @@ namespace ioopassignment
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
-                    string deleteQuery = "DELETE FROM facilities WHERE Id = @id"; // Delete specific row
+                    string deleteQuery = "DELETE FROM facilities WHERE FacilitiesId = @FacilitiesId"; // Delete specific row
                     SqlCommand cmd = new SqlCommand(deleteQuery, conn);
-                    cmd.Parameters.AddWithValue("@id", selectedId);
+                    cmd.Parameters.AddWithValue("@FacilitiesId", selectedId);
                     cmd.ExecuteNonQuery(); // Run the delete command
                 }
 
