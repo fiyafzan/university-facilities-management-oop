@@ -81,6 +81,12 @@ namespace ioopassignment
 
         private void btnConfirmDeleteUser_Click(object sender, EventArgs e)
         {
+            deleteUser();
+        }
+
+        private void deleteUser()
+        {
+
             try
             {
                 // Check if the user selected a row

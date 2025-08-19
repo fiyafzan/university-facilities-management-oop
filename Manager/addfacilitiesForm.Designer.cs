@@ -32,6 +32,7 @@
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
+            cboUniversity = new ComboBox();
             txtAddAvailability = new TextBox();
             label5 = new Label();
             txtAddFacilityCapacity = new TextBox();
@@ -45,7 +46,6 @@
             btnConfirmAddFacility = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            comboboxUniversity = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -77,7 +77,7 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(comboboxUniversity);
+            panel2.Controls.Add(cboUniversity);
             panel2.Controls.Add(txtAddAvailability);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(txtAddFacilityCapacity);
@@ -92,6 +92,14 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(386, 246);
             panel2.TabIndex = 17;
+            // 
+            // cboUniversity
+            // 
+            cboUniversity.FormattingEnabled = true;
+            cboUniversity.Location = new Point(242, 22);
+            cboUniversity.Name = "cboUniversity";
+            cboUniversity.Size = new Size(125, 28);
+            cboUniversity.TabIndex = 18;
             // 
             // txtAddAvailability
             // 
@@ -224,14 +232,6 @@
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
             // 
-            // comboboxUniversity
-            // 
-            comboboxUniversity.FormattingEnabled = true;
-            comboboxUniversity.Location = new Point(242, 22);
-            comboboxUniversity.Name = "comboboxUniversity";
-            comboboxUniversity.Size = new Size(125, 28);
-            comboboxUniversity.TabIndex = 18;
-            // 
             // addfacilitiesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -276,6 +276,6 @@
         private PictureBox pictureBox2;
         private Label label5;
         private TextBox txtAddAvailability;
-        private ComboBox comboboxUniversity;
+        private ComboBox cboUniversity;
     }
 }

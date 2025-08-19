@@ -74,6 +74,11 @@ namespace ioopassignment.Manager
 
         private void btnConfirmEditFacilities_Click(object sender, EventArgs e)
         {
+            editFacility();
+        }
+
+        private void editFacility()
+        {
             using (SqlConnection con = new SqlConnection(connString))
             {
                 //fetches data from database and send back data updates to database

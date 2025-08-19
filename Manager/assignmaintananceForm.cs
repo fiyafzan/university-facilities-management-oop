@@ -40,13 +40,13 @@ namespace ioopassignment
 
         private void assignmaintananceForm_Load(object sender, EventArgs e)
         {
-            dataMaintanance1.Hide();
+            dataMaintanance.Hide();
             ShowTable();
         }
 
         private void btnSeeAssignMaintanance_Click(object sender, EventArgs e)
         {
-            dataMaintanance1.Show();
+            dataMaintanance.Show();
         }
 
         private void ShowTable()
@@ -74,7 +74,7 @@ namespace ioopassignment
                         da.Fill(dt);
 
                         // Bind the DataTable to the dataUserDetails
-                        dataMaintanance1.DataSource = dt;
+                        dataMaintanance.DataSource = dt;
                     }
                 }
             }

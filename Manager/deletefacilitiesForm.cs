@@ -74,6 +74,16 @@ namespace ioopassignment
 
         private void btnConfirmDeleteFacilities_Click(object sender, EventArgs e)
         {
+            deleteFacility();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteFacility()
+        {
             try
             {
                 // Check if the user selected a row
@@ -116,11 +126,6 @@ namespace ioopassignment
             {
                 MessageBox.Show("Error deleting record: " + ex.Message);
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -61,13 +61,13 @@ namespace ioopassignment
                 da.Fill(dt);
                 db.Fill(du);
 
-                comboboxUniversity.DataSource = dt;
-                comboboxUniversity.DisplayMember = "uniName"; // what the user sees
-                comboboxUniversity.ValueMember = "UniId";      // actual value (int)
+                cboUniversity.DataSource = dt;
+                cboUniversity.DisplayMember = "uniName"; // what the user sees
+                cboUniversity.ValueMember = "UniId";      // actual value (int)
                                                                // 
-                comboboxTechnician.DataSource = du;
-                comboboxTechnician.DisplayMember = "username";
-                comboboxTechnician.ValueMember = "username";
+                cboTechnician.DataSource = du;
+                cboTechnician.DisplayMember = "username";
+                cboTechnician.ValueMember = "username";
 
                 var durations = new[]
                 {
@@ -77,9 +77,9 @@ namespace ioopassignment
                 };
 
                 // Bind to ComboBox
-                comboboxDuration.DataSource = durations;
-                comboboxDuration.DisplayMember = "Text";   // What user sees
-                comboboxDuration.ValueMember = "Value";    // Actual data you use in code   
+                cboDuration.DataSource = durations;
+                cboDuration.DisplayMember = "Text";   // What user sees
+                cboDuration.ValueMember = "Value";    // Actual data you use in code   
 
             }
         }
@@ -87,22 +87,22 @@ namespace ioopassignment
         private void btnConfirmAddMaintanance_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            Maintanance addmaintanance = new Maintanance(comboboxUniversity.SelectedValue.ToString(), comboboxFacilityType.SelectedValue.ToString(), comboboxDuration.SelectedValue.ToString(), txtDateAssignMaintanance.Text, comboboxTechnician.SelectedValue.ToString());
+            Maintanance addmaintanance = new Maintanance(cboUniversity.SelectedValue.ToString(), cboFacilityType.SelectedValue.ToString(), cboDuration.SelectedValue.ToString(), txtDateMaintenance.Text, cboTechnician.SelectedValue.ToString());
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(addmaintanance.addMaintanance());
 
             //convert to string from text
 
-            txtDateAssignMaintanance.Text = String.Empty;            
+            txtDateMaintenance.Text = String.Empty;            
         }
 
         private void comboboxUniversity_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (comboboxUniversity.SelectedValue == null || comboboxUniversity.SelectedValue is DataRowView)
+            if (cboUniversity.SelectedValue == null || cboUniversity.SelectedValue is DataRowView)
                 return;
             {
-                int selectedUniID = Convert.ToInt32(comboboxUniversity.SelectedValue);
+                int selectedUniID = Convert.ToInt32(cboUniversity.SelectedValue);
 
                 using (SqlConnection con = new SqlConnection(connString))
                 {
@@ -114,9 +114,9 @@ namespace ioopassignment
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    comboboxFacilityType.DataSource = dt;
-                    comboboxFacilityType.DisplayMember = "facility category";
-                    comboboxFacilityType.ValueMember = "FacilitiesId";
+                    cboFacilityType.DataSource = dt;
+                    cboFacilityType.DisplayMember = "facility category";
+                    cboFacilityType.ValueMember = "FacilitiesId";
                 }
             }
         }

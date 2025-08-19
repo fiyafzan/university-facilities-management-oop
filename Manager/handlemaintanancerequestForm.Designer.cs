@@ -33,7 +33,7 @@
             btnExitHandleRequest = new Button();
             btnDeclineRequest = new Button();
             btnApproveRequest = new Button();
-            btnSeeMaintananceReq = new Button();
+            btnSeeRequest = new Button();
             dataMaintananceReqDetails = new DataGridView();
             grpHandleRequest = new GroupBox();
             panel1.SuspendLayout();
@@ -98,17 +98,17 @@
             btnApproveRequest.Text = "Approve";
             btnApproveRequest.UseVisualStyleBackColor = false;
             // 
-            // btnSeeMaintananceReq
+            // btnSeeRequest
             // 
-            btnSeeMaintananceReq.BackColor = Color.FromArgb(255, 224, 192);
-            btnSeeMaintananceReq.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnSeeMaintananceReq.Location = new Point(367, 18);
-            btnSeeMaintananceReq.Name = "btnSeeMaintananceReq";
-            btnSeeMaintananceReq.Size = new Size(89, 35);
-            btnSeeMaintananceReq.TabIndex = 29;
-            btnSeeMaintananceReq.Text = "See";
-            btnSeeMaintananceReq.UseVisualStyleBackColor = false;
-            btnSeeMaintananceReq.Click += btnSeeMaintananceReq_Click;
+            btnSeeRequest.BackColor = Color.FromArgb(255, 224, 192);
+            btnSeeRequest.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
+            btnSeeRequest.Location = new Point(367, 18);
+            btnSeeRequest.Name = "btnSeeRequest";
+            btnSeeRequest.Size = new Size(89, 35);
+            btnSeeRequest.TabIndex = 29;
+            btnSeeRequest.Text = "See";
+            btnSeeRequest.UseVisualStyleBackColor = false;
+            btnSeeRequest.Click += btnSeeMaintananceReq_Click;
             // 
             // dataMaintananceReqDetails
             // 
@@ -139,7 +139,7 @@
             BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSeeMaintananceReq);
+            Controls.Add(btnSeeRequest);
             Controls.Add(btnExitHandleRequest);
             Controls.Add(btnDeclineRequest);
             Controls.Add(btnApproveRequest);
@@ -163,7 +163,7 @@
         private Button btnExitHandleRequest;
         private Button btnDeclineRequest;
         private Button btnApproveRequest;
-        private Button btnSeeMaintananceReq;
+        private Button btnSeeRequest;
         private DataGridView dataMaintananceReqDetails;
         private GroupBox grpHandleRequest;
     }

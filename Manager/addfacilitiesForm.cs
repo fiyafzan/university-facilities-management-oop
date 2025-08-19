@@ -40,7 +40,7 @@ namespace ioopassignment
         private void btnConfirmAddFacility_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            Facility addfacility = new Facility(comboboxUniversity.SelectedValue.ToString(), txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text, txtAddAvailability.Text);
+            Facility addfacility = new Facility(cboUniversity.SelectedValue.ToString(), txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text, txtAddAvailability.Text);
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(addfacility.addFacility());
@@ -87,9 +87,9 @@ namespace ioopassignment
                 da.Fill(dt);
 
                 // Step 6: Bind the ComboBox to the DataTable
-                comboboxUniversity.DataSource = dt;          // The whole table is the source
-                comboboxUniversity.DisplayMember = "uniName"; // What the user sees
-                comboboxUniversity.ValueMember = "UniId";     // The actual value (ID)
+                cboUniversity.DataSource = dt;          // The whole table is the source
+                cboUniversity.DisplayMember = "uniName"; // What the user sees
+                cboUniversity.ValueMember = "UniId";     // The actual value (ID)
             }
         }
     }

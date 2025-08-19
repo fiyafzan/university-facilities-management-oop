@@ -31,13 +31,13 @@
             panel1 = new Panel();
             label4 = new Label();
             grpAssignMaintanance = new GroupBox();
-            dataMaintanance1 = new DataGridView();
-            btnSeeAssignMaintanance = new Button();
-            btnExitAssignMaintanace = new Button();
+            dataMaintanance = new DataGridView();
+            btnSeeMaintenance = new Button();
+            btnExitAssignMaintenace = new Button();
             btnAssignMaintanance = new Button();
             panel1.SuspendLayout();
             grpAssignMaintanance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataMaintanance1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataMaintanance).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -64,7 +64,7 @@
             // grpAssignMaintanance
             // 
             grpAssignMaintanance.BackColor = Color.White;
-            grpAssignMaintanance.Controls.Add(dataMaintanance1);
+            grpAssignMaintanance.Controls.Add(dataMaintanance);
             grpAssignMaintanance.Location = new Point(90, 75);
             grpAssignMaintanance.Name = "grpAssignMaintanance";
             grpAssignMaintanance.Size = new Size(605, 264);
@@ -72,39 +72,39 @@
             grpAssignMaintanance.TabStop = false;
             grpAssignMaintanance.Text = "Maintanance Schedule";
             // 
-            // dataMaintanance1
+            // dataMaintanance
             // 
-            dataMaintanance1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataMaintanance1.Location = new Point(21, 26);
-            dataMaintanance1.Name = "dataMaintanance1";
-            dataMaintanance1.RowHeadersWidth = 51;
-            dataMaintanance1.Size = new Size(567, 223);
-            dataMaintanance1.TabIndex = 0;
-            dataMaintanance1.CellContentClick += dataGridView1_CellContentClick;
+            dataMaintanance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataMaintanance.Location = new Point(21, 26);
+            dataMaintanance.Name = "dataMaintanance";
+            dataMaintanance.RowHeadersWidth = 51;
+            dataMaintanance.Size = new Size(567, 223);
+            dataMaintanance.TabIndex = 0;
+            dataMaintanance.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // btnSeeAssignMaintanance
+            // btnSeeMaintenance
             // 
-            btnSeeAssignMaintanance.BackColor = Color.FromArgb(255, 224, 192);
-            btnSeeAssignMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnSeeAssignMaintanance.Location = new Point(434, 12);
-            btnSeeAssignMaintanance.Name = "btnSeeAssignMaintanance";
-            btnSeeAssignMaintanance.Size = new Size(89, 35);
-            btnSeeAssignMaintanance.TabIndex = 16;
-            btnSeeAssignMaintanance.Text = "See";
-            btnSeeAssignMaintanance.UseVisualStyleBackColor = false;
-            btnSeeAssignMaintanance.Click += btnSeeAssignMaintanance_Click;
+            btnSeeMaintenance.BackColor = Color.FromArgb(255, 224, 192);
+            btnSeeMaintenance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
+            btnSeeMaintenance.Location = new Point(434, 12);
+            btnSeeMaintenance.Name = "btnSeeMaintenance";
+            btnSeeMaintenance.Size = new Size(89, 35);
+            btnSeeMaintenance.TabIndex = 16;
+            btnSeeMaintenance.Text = "See";
+            btnSeeMaintenance.UseVisualStyleBackColor = false;
+            btnSeeMaintenance.Click += btnSeeAssignMaintanance_Click;
             // 
-            // btnExitAssignMaintanace
+            // btnExitAssignMaintenace
             // 
-            btnExitAssignMaintanace.BackColor = Color.FromArgb(255, 224, 192);
-            btnExitAssignMaintanace.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAssignMaintanace.Location = new Point(437, 345);
-            btnExitAssignMaintanace.Name = "btnExitAssignMaintanace";
-            btnExitAssignMaintanace.Size = new Size(153, 41);
-            btnExitAssignMaintanace.TabIndex = 20;
-            btnExitAssignMaintanace.Text = "Exit";
-            btnExitAssignMaintanace.UseVisualStyleBackColor = false;
-            btnExitAssignMaintanace.Click += btnExitAssignMaintanace_Click;
+            btnExitAssignMaintenace.BackColor = Color.FromArgb(255, 224, 192);
+            btnExitAssignMaintenace.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
+            btnExitAssignMaintenace.Location = new Point(437, 345);
+            btnExitAssignMaintenace.Name = "btnExitAssignMaintenace";
+            btnExitAssignMaintenace.Size = new Size(153, 41);
+            btnExitAssignMaintenace.TabIndex = 20;
+            btnExitAssignMaintenace.Text = "Exit";
+            btnExitAssignMaintenace.UseVisualStyleBackColor = false;
+            btnExitAssignMaintenace.Click += btnExitAssignMaintanace_Click;
             // 
             // btnAssignMaintanance
             // 
@@ -125,9 +125,9 @@
             BackgroundImage = Properties.Resources.Screenshot_2025_08_12_093429;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnExitAssignMaintanace);
+            Controls.Add(btnExitAssignMaintenace);
             Controls.Add(btnAssignMaintanance);
-            Controls.Add(btnSeeAssignMaintanance);
+            Controls.Add(btnSeeMaintenance);
             Controls.Add(grpAssignMaintanance);
             Controls.Add(panel1);
             DoubleBuffered = true;
@@ -137,7 +137,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             grpAssignMaintanance.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataMaintanance1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataMaintanance).EndInit();
             ResumeLayout(false);
         }
 
@@ -146,9 +146,9 @@
         private Panel panel1;
         private Label label4;
         private GroupBox grpAssignMaintanance;
-        private Button btnSeeAssignMaintanance;
-        private Button btnExitAssignMaintanace;
+        private Button btnSeeMaintenance;
+        private Button btnExitAssignMaintenace;
         private Button btnAssignMaintanance;
-        private DataGridView dataMaintanance1;
+        private DataGridView dataMaintanance;
     }
 }

@@ -38,7 +38,7 @@ namespace ioopassignment
             set { role = value; }
         }
 
-        //compiled all constructor under one constructor called User
+        //compiled all under one constructor
         public User(string name, string password, string role)
         {
             this.username = name;
@@ -46,7 +46,7 @@ namespace ioopassignment
             this.role = role;
         }
 
-        //add user
+        // member method called addUser 
         public string addUser()
         {
             string status;
@@ -55,7 +55,8 @@ namespace ioopassignment
             con.Open();
 
             //cmd is to insert a record into users table
-            SqlCommand cmd = new SqlCommand("Insert into Users(username, password, role) values(@name,@password,@role)", con);
+            SqlCommand cmd = 
+            new SqlCommand("Insert into Users(username, password, role) values(@name,@password,@role)", con);
             cmd.Parameters.AddWithValue("@name", this.username);
             cmd.Parameters.AddWithValue("@password", this.password);
             cmd.Parameters.AddWithValue("@role", this.role);

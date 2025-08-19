@@ -62,7 +62,8 @@ namespace ioopassignment
 
 
         // conection string to connect to sql database
-        static SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+        static SqlConnection con = 
+        new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
         //add facility
         public string addFacility()
@@ -74,7 +75,10 @@ namespace ioopassignment
             con.Open();
 
             //cmd is to insert a record into users table
-            SqlCommand cmd = new SqlCommand("Insert into facilities(UniId, [facility category], [facility rate (/hr)], capacity, [availability (y/n)]) values(@university,@facilitycategory,@facilityrate,@capacity,@availability)", con);
+            SqlCommand cmd = 
+            new SqlCommand("Insert into facilities(UniId, [facility category], " +
+            "[facility rate (/hr)], capacity, [availability (y/n)]) values(@university" +
+            ",@facilitycategory,@facilityrate,@capacity,@availability)", con);
             cmd.Parameters.AddWithValue("@university", this.UniId);
             cmd.Parameters.AddWithValue("@facilitycategory", this.facility_category);
             cmd.Parameters.AddWithValue("@facilityrate", this.facility_rate);

@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
-            comboboxTechnician = new ComboBox();
-            comboboxDuration = new ComboBox();
-            comboboxFacilityType = new ComboBox();
-            comboboxUniversity = new ComboBox();
-            txtDateAssignMaintanance = new TextBox();
+            cboTechnician = new ComboBox();
+            cboDuration = new ComboBox();
+            cboFacilityType = new ComboBox();
+            cboUniversity = new ComboBox();
+            txtDateMaintenance = new TextBox();
             label5 = new Label();
             label6 = new Label();
             label1 = new Label();
@@ -56,11 +56,11 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(comboboxTechnician);
-            panel2.Controls.Add(comboboxDuration);
-            panel2.Controls.Add(comboboxFacilityType);
-            panel2.Controls.Add(comboboxUniversity);
-            panel2.Controls.Add(txtDateAssignMaintanance);
+            panel2.Controls.Add(cboTechnician);
+            panel2.Controls.Add(cboDuration);
+            panel2.Controls.Add(cboFacilityType);
+            panel2.Controls.Add(cboUniversity);
+            panel2.Controls.Add(txtDateMaintenance);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label1);
@@ -72,46 +72,46 @@
             panel2.Size = new Size(402, 231);
             panel2.TabIndex = 20;
             // 
-            // comboboxTechnician
+            // cboTechnician
             // 
-            comboboxTechnician.FormattingEnabled = true;
-            comboboxTechnician.Location = new Point(239, 193);
-            comboboxTechnician.Name = "comboboxTechnician";
-            comboboxTechnician.Size = new Size(151, 28);
-            comboboxTechnician.TabIndex = 25;
+            cboTechnician.FormattingEnabled = true;
+            cboTechnician.Location = new Point(239, 193);
+            cboTechnician.Name = "cboTechnician";
+            cboTechnician.Size = new Size(151, 28);
+            cboTechnician.TabIndex = 25;
             // 
-            // comboboxDuration
+            // cboDuration
             // 
-            comboboxDuration.FormattingEnabled = true;
-            comboboxDuration.Location = new Point(239, 104);
-            comboboxDuration.Name = "comboboxDuration";
-            comboboxDuration.Size = new Size(151, 28);
-            comboboxDuration.TabIndex = 24;
+            cboDuration.FormattingEnabled = true;
+            cboDuration.Location = new Point(239, 104);
+            cboDuration.Name = "cboDuration";
+            cboDuration.Size = new Size(151, 28);
+            cboDuration.TabIndex = 24;
             // 
-            // comboboxFacilityType
+            // cboFacilityType
             // 
-            comboboxFacilityType.FormattingEnabled = true;
-            comboboxFacilityType.Location = new Point(239, 59);
-            comboboxFacilityType.Name = "comboboxFacilityType";
-            comboboxFacilityType.Size = new Size(151, 28);
-            comboboxFacilityType.TabIndex = 23;
-            comboboxFacilityType.SelectedIndexChanged += comboboxFacilityType_SelectedIndexChanged;
+            cboFacilityType.FormattingEnabled = true;
+            cboFacilityType.Location = new Point(239, 59);
+            cboFacilityType.Name = "cboFacilityType";
+            cboFacilityType.Size = new Size(151, 28);
+            cboFacilityType.TabIndex = 23;
+            cboFacilityType.SelectedIndexChanged += comboboxFacilityType_SelectedIndexChanged;
             // 
-            // comboboxUniversity
+            // cboUniversity
             // 
-            comboboxUniversity.FormattingEnabled = true;
-            comboboxUniversity.Location = new Point(239, 13);
-            comboboxUniversity.Name = "comboboxUniversity";
-            comboboxUniversity.Size = new Size(151, 28);
-            comboboxUniversity.TabIndex = 22;
-            comboboxUniversity.SelectedIndexChanged += comboboxUniversity_SelectedIndexChanged_1;
+            cboUniversity.FormattingEnabled = true;
+            cboUniversity.Location = new Point(239, 13);
+            cboUniversity.Name = "cboUniversity";
+            cboUniversity.Size = new Size(151, 28);
+            cboUniversity.TabIndex = 22;
+            cboUniversity.SelectedIndexChanged += comboboxUniversity_SelectedIndexChanged_1;
             // 
-            // txtDateAssignMaintanance
+            // txtDateMaintenance
             // 
-            txtDateAssignMaintanance.Location = new Point(239, 148);
-            txtDateAssignMaintanance.Name = "txtDateAssignMaintanance";
-            txtDateAssignMaintanance.Size = new Size(151, 27);
-            txtDateAssignMaintanance.TabIndex = 20;
+            txtDateMaintenance.Location = new Point(239, 148);
+            txtDateMaintenance.Name = "txtDateMaintenance";
+            txtDateMaintenance.Size = new Size(151, 27);
+            txtDateMaintenance.TabIndex = 20;
             // 
             // label5
             // 
@@ -268,14 +268,14 @@
         private Label label3;
         private Panel panel1;
         private Label label4;
-        private TextBox txtDateAssignMaintanance;
+        private TextBox txtDateMaintenance;
         private Button btnExitAddMaintanance;
         private Button btnConfirmAddMaintanance;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private ComboBox comboboxUniversity;
-        private ComboBox comboboxDuration;
-        private ComboBox comboboxFacilityType;
-        private ComboBox comboboxTechnician;
+        private ComboBox cboUniversity;
+        private ComboBox cboDuration;
+        private ComboBox cboFacilityType;
+        private ComboBox cboTechnician;
     }
 }

@@ -18,9 +18,10 @@ namespace ioopassignment
         private string maintanance_technician;
 
         // conection string to connect to sql database
-        static SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
-
-        // constructor getter setter
+        static SqlConnection con =
+        new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+       
+        // getter and setter accessors
         public string uniId
         { 
             get { return UniId; }
@@ -51,6 +52,7 @@ namespace ioopassignment
             set { maintanance_technician = value; }
         }
 
+        //constructor 
         public Maintanance(string  university, string facilitycategory, string duration, string date, string technician)
         {
             this.UniId = university;
@@ -70,7 +72,10 @@ namespace ioopassignment
             con.Open();
 
             //cmd is to insert a record into users table
-            SqlCommand cmd = new SqlCommand("Insert into maintanances(UniId, [facility category], duration, date, technician) values(@university,@facilitycategory,@duration,@date,@technician)", con);
+            SqlCommand cmd = new SqlCommand("Insert into maintanances(UniId, " +
+                "[facility category], duration, date, technician) " +
+                "values(@university,@facilitycategory,@duration," +
+                "@date,@technician)", con);
             cmd.Parameters.AddWithValue("@university", this.UniId);
             cmd.Parameters.AddWithValue("@facilitycategory", this.facility_category);
             cmd.Parameters.AddWithValue("@duration", this.maintanance_duration);

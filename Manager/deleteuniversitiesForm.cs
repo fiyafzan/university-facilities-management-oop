@@ -35,6 +35,46 @@ namespace ioopassignment.Manager
 
         private void btnConfirmDeleteUniversity_Click(object sender, EventArgs e)
         {
+            deleteUniversity();
+        }
+
+        private void ShowTable()
+        {
+            try
+            {
+                // Create the sql connection
+                using (SqlConnection con = new SqlConnection(connString))
+                {
+                    // Write the SQL query (adjust table name & columns to match your DB)
+                    string query = "SELECT * FROM universities";
+
+                    // Create the sql command
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        // Open the connection
+                        con.Open();
+
+                        // Use SqlDataAdapter to fill a DataTable
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        // Bind the DataTable to the dataUserDetails
+                        dataUniversityDetails2.DataSource = dt;
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                // Show any errors
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void deleteUniversity()
+        {
             try
             {
                 // Check if the user selected a row
@@ -76,41 +116,6 @@ namespace ioopassignment.Manager
             catch (Exception ex)
             {
                 MessageBox.Show("Error deleting record: " + ex.Message);
-            }
-        }
-
-        private void ShowTable()
-        {
-            try
-            {
-                // Create the sql connection
-                using (SqlConnection con = new SqlConnection(connString))
-                {
-                    // Write the SQL query (adjust table name & columns to match your DB)
-                    string query = "SELECT * FROM universities";
-
-                    // Create the sql command
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        // Open the connection
-                        con.Open();
-
-                        // Use SqlDataAdapter to fill a DataTable
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-
-                        // Bind the DataTable to the dataUserDetails
-                        dataUniversityDetails2.DataSource = dt;
-                    }
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                // Show any errors
-                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }

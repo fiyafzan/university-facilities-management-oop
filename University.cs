@@ -11,11 +11,14 @@ namespace ioopassignment
 {
     internal class University
     {
+        // private field
         private string uniName;
 
         // conection string to connect to sql database
-        static SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+        static SqlConnection con = 
+        new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
+        // getter setter accessors
         public string UniName
         {
             get { return uniName; }
@@ -35,7 +38,8 @@ namespace ioopassignment
             con.Open();
 
             //cmd is to insert a record into users table
-            SqlCommand cmd = new SqlCommand("Insert into Universities(uniName) values(@uniName)", con);
+            SqlCommand cmd = 
+            new SqlCommand("Insert into Universities(uniName) values(@uniName)", con);
             cmd.Parameters.AddWithValue("@uniName", this.uniName);           
 
             // run the command
