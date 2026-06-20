@@ -49,6 +49,6 @@ A desktop application that brings sport and recreation facility bookings for mul
 
 ## Team
 
-- **Hafiy Ziyad Zikry bin Suhairul Afzan** (TP077286) — Team lead, Manager module
-- **Iddin Irfan Mikhail bin Noor Izwan** (TP077270) — Login & Receptionist module
-- **Mohd Afif Ammarhazim bin Mohd Nazariee** (TP077348) — Student & Maintenance module
+- **Hafiy Ziyad Zikry** — Team lead, Manager module
+- **Iddin Irfan Mikhail** — Login & Receptionist module
+- **Mohd Afif Ammarhazim** — Student & Maintenance module
