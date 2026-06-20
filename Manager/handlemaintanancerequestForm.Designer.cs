@@ -36,9 +36,11 @@
             btnSeeRequest = new Button();
             dataMaintananceReqDetails = new DataGridView();
             grpHandleRequest = new GroupBox();
+            dataMaintananceReqDetails2 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataMaintananceReqDetails).BeginInit();
             grpHandleRequest.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataMaintananceReqDetails2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -97,6 +99,7 @@
             btnApproveRequest.TabIndex = 26;
             btnApproveRequest.Text = "Approve";
             btnApproveRequest.UseVisualStyleBackColor = false;
+            btnApproveRequest.Click += btnApproveRequest_Click;
             // 
             // btnSeeRequest
             // 
@@ -116,13 +119,14 @@
             dataMaintananceReqDetails.Location = new Point(16, 26);
             dataMaintananceReqDetails.Name = "dataMaintananceReqDetails";
             dataMaintananceReqDetails.RowHeadersWidth = 51;
-            dataMaintananceReqDetails.Size = new Size(499, 224);
+            dataMaintananceReqDetails.Size = new Size(499, 118);
             dataMaintananceReqDetails.TabIndex = 1;
             dataMaintananceReqDetails.CellContentClick += dataMaintananceReqDetails_CellContentClick;
             // 
             // grpHandleRequest
             // 
             grpHandleRequest.BackColor = Color.White;
+            grpHandleRequest.Controls.Add(dataMaintananceReqDetails2);
             grpHandleRequest.Controls.Add(dataMaintananceReqDetails);
             grpHandleRequest.Location = new Point(112, 59);
             grpHandleRequest.Name = "grpHandleRequest";
@@ -131,6 +135,15 @@
             grpHandleRequest.TabStop = false;
             grpHandleRequest.Text = "Equipment Request";
             grpHandleRequest.Enter += grpHandleRequest_Enter;
+            // 
+            // dataMaintananceReqDetails2
+            // 
+            dataMaintananceReqDetails2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataMaintananceReqDetails2.Location = new Point(16, 145);
+            dataMaintananceReqDetails2.Name = "dataMaintananceReqDetails2";
+            dataMaintananceReqDetails2.RowHeadersWidth = 51;
+            dataMaintananceReqDetails2.Size = new Size(499, 118);
+            dataMaintananceReqDetails2.TabIndex = 2;
             // 
             // handlemaintanancerequestForm
             // 
@@ -153,6 +166,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataMaintananceReqDetails).EndInit();
             grpHandleRequest.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataMaintananceReqDetails2).EndInit();
             ResumeLayout(false);
         }
 
@@ -166,5 +180,6 @@
         private Button btnSeeRequest;
         private DataGridView dataMaintananceReqDetails;
         private GroupBox grpHandleRequest;
+        private DataGridView dataMaintananceReqDetails2;
     }
 }

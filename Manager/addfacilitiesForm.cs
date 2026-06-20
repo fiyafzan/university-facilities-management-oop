@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ioopassignment.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -40,7 +41,9 @@ namespace ioopassignment
         private void btnConfirmAddFacility_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            Facility addfacility = new Facility(cboUniversity.SelectedValue.ToString(), txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text, txtAddAvailability.Text);
+            Facility addfacility = new Facility(cboUniversity.SelectedValue.ToString(), 
+                txtAddFacilityCategory.Text, txtAddFacilityRate.Text, txtAddFacilityCapacity.Text, 
+                txtAddAvailability.Text);
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(addfacility.addFacility());

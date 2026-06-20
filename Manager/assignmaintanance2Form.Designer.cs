@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(assignmaintanance2Form));
             panel2 = new Panel();
+            lblPending = new Label();
+            label7 = new Label();
             cboTechnician = new ComboBox();
             cboDuration = new ComboBox();
             cboFacilityType = new ComboBox();
@@ -56,6 +58,8 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(lblPending);
+            panel2.Controls.Add(label7);
             panel2.Controls.Add(cboTechnician);
             panel2.Controls.Add(cboDuration);
             panel2.Controls.Add(cboFacilityType);
@@ -67,10 +71,31 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label3);
             panel2.ForeColor = Color.Black;
-            panel2.Location = new Point(197, 93);
+            panel2.Location = new Point(197, 65);
             panel2.Name = "panel2";
-            panel2.Size = new Size(402, 231);
+            panel2.Size = new Size(402, 281);
             panel2.TabIndex = 20;
+            // 
+            // lblPending
+            // 
+            lblPending.AutoSize = true;
+            lblPending.Location = new Point(278, 241);
+            lblPending.Name = "lblPending";
+            lblPending.Size = new Size(62, 20);
+            lblPending.TabIndex = 27;
+            lblPending.Text = "Pending";
+            lblPending.Click += label8_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Poor Richard", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label7.Location = new Point(140, 232);
+            label7.Name = "label7";
+            label7.Size = new Size(93, 31);
+            label7.TabIndex = 26;
+            label7.Text = "Status :";
+            label7.Click += label7_Click;
             // 
             // cboTechnician
             // 
@@ -190,7 +215,7 @@
             // 
             btnExitAddMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnExitAddMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnExitAddMaintanance.Location = new Point(420, 342);
+            btnExitAddMaintanance.Location = new Point(417, 352);
             btnExitAddMaintanance.Name = "btnExitAddMaintanance";
             btnExitAddMaintanance.Size = new Size(153, 41);
             btnExitAddMaintanance.TabIndex = 22;
@@ -202,7 +227,7 @@
             // 
             btnConfirmAddMaintanance.BackColor = Color.FromArgb(255, 224, 192);
             btnConfirmAddMaintanance.Font = new Font("Roboto", 9F, FontStyle.Bold | FontStyle.Italic);
-            btnConfirmAddMaintanance.Location = new Point(243, 342);
+            btnConfirmAddMaintanance.Location = new Point(243, 352);
             btnConfirmAddMaintanance.Name = "btnConfirmAddMaintanance";
             btnConfirmAddMaintanance.Size = new Size(153, 41);
             btnConfirmAddMaintanance.TabIndex = 21;
@@ -214,9 +239,9 @@
             // 
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(605, 126);
+            pictureBox2.Location = new Point(605, 141);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(183, 159);
+            pictureBox2.Size = new Size(183, 169);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
@@ -277,5 +302,7 @@
         private ComboBox cboDuration;
         private ComboBox cboFacilityType;
         private ComboBox cboTechnician;
+        private Label label7;
+        private Label lblPending;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ioopassignment.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -45,26 +46,26 @@ namespace ioopassignment
         }
 
         private void assignmaintanance2Form_Load(object sender, EventArgs e)
-        {            
+        {
             // Load University names
             using (SqlConnection con = new SqlConnection(connString))
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT UniId, uniName FROM universities", con);                
+                SqlCommand cmd = new SqlCommand("SELECT UniId, uniName FROM universities", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
-                
+
                 SqlCommand query = new SqlCommand("SELECT username FROM users WHERE role = 'maintenance'", con);
                 SqlDataAdapter db = new SqlDataAdapter(query);
                 DataTable du = new DataTable();
-                
+
                 da.Fill(dt);
                 db.Fill(du);
 
                 cboUniversity.DataSource = dt;
                 cboUniversity.DisplayMember = "uniName"; // what the user sees
                 cboUniversity.ValueMember = "UniId";      // actual value (int)
-                                                               // 
+                                                          // 
                 cboTechnician.DataSource = du;
                 cboTechnician.DisplayMember = "username";
                 cboTechnician.ValueMember = "username";
@@ -79,22 +80,23 @@ namespace ioopassignment
                 // Bind to ComboBox
                 cboDuration.DataSource = durations;
                 cboDuration.DisplayMember = "Text";   // What user sees
-                cboDuration.ValueMember = "Value";    // Actual data you use in code   
-
+                cboDuration.ValueMember = "Value";    // Actual data you use in code              
             }
         }
 
         private void btnConfirmAddMaintanance_Click(object sender, EventArgs e)
         {
             // define adduser as Username, Password, and Role from User class
-            Maintanance addmaintanance = new Maintanance(cboUniversity.SelectedValue.ToString(), cboFacilityType.SelectedValue.ToString(), cboDuration.SelectedValue.ToString(), txtDateMaintenance.Text, cboTechnician.SelectedValue.ToString());
+            Maintanance addmaintanance = new Maintanance(cboUniversity.SelectedValue.ToString(),
+                cboFacilityType.SelectedValue.ToString(), cboDuration.SelectedValue.ToString(),
+                txtDateMaintenance.Text, cboTechnician.SelectedValue.ToString(), "Pending");
 
             // show message box for adduser from addUser(User constructor)
             MessageBox.Show(addmaintanance.addMaintanance());
 
             //convert to string from text
 
-            txtDateMaintenance.Text = String.Empty;            
+            txtDateMaintenance.Text = String.Empty;
         }
 
         private void comboboxUniversity_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -124,6 +126,21 @@ namespace ioopassignment
         private void comboboxFacilityType_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }        
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

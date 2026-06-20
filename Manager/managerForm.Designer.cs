@@ -137,6 +137,7 @@
             btnExitManager.TabIndex = 18;
             btnExitManager.Text = "Exit";
             btnExitManager.UseVisualStyleBackColor = false;
+            btnExitManager.Click += btnExitManager_Click;
             // 
             // label4
             // 

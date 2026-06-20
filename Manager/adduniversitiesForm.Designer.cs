@@ -158,6 +158,7 @@
             DoubleBuffered = true;
             Name = "adduniversitiesForm";
             Text = "adduniversitiesForm";
+            Load += adduniversitiesForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);

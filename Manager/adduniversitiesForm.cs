@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ioopassignment.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +38,11 @@ namespace ioopassignment.Manager
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adduniversitiesForm_Load(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,5 @@
-﻿using ioopassignment.Manager;
+﻿using iOOP_Receptionist;
+using ioopassignment.Manager;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,6 +66,13 @@ namespace ioopassignment
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnExitManager_Click(object sender, EventArgs e)
+        {
+            ARFMSLogin aRFMSLogin = new ARFMSLogin();
+            aRFMSLogin.Show();
+            this.Hide();
         }
     }
 }
