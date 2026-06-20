@@ -1,0 +1,1 @@
+﻿DBCC CHECKIDENT ('universities', RESEED, 6);

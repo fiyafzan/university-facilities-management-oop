@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="ARFMSLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintainanceEquipmentRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintainanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintainanceReplacementRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintainanceUpdateStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintainanceViewSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Maintenance\MaintenanceEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSAcceptBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSManageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSReviewRating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reception\ARFMSSearchExistingBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Student\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\addfacilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\adduniversitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\adduserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\assignmaintanance2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\assignmaintananceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\deletefacilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\deleteuniversitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\deleteuserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\editfacilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\handlemaintanancerequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\managefacilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\managerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\manageuniversitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Manager\manageuserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Student\FacilityAvail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Student\FacilityBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Student\FacilityReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Student\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
