@@ -63,6 +63,76 @@ namespace ioopassignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apu_student {
+            get {
+                object obj = ResourceManager.GetObject("apu student", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arfms_login {
+            get {
+                object obj = ResourceManager.GetObject("arfms login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gray_Peach_Purple_Green_Modern_Product_Launch_Plan_Presentation {
+            get {
+                object obj = ResourceManager.GetObject("Gray Peach Purple Green Modern Product Launch Plan Presentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gray_Peach_Purple_Green_Modern_Product_Launch_Plan_Presentation__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Gray Peach Purple Green Modern Product Launch Plan Presentation (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maintenance_background {
+            get {
+                object obj = ResourceManager.GetObject("maintenance background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maintenance_dashboard_form {
+            get {
+                object obj = ResourceManager.GetObject("maintenance dashboard form", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reception_background {
+            get {
+                object obj = ResourceManager.GetObject("reception background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2025_08_12_093429 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2025-08-12 093429", resourceCulture);
